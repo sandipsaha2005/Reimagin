@@ -1,0 +1,15 @@
+{
+  "name": "reimagin",
+  "version": "1.0.0",
+  "description": "this will be out repo",
+  "main": "app.js",
+  "scripts": {
+    "build": "npx tailwindcss -i ./src/index.css -o ./dist/output.css --watch"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "tailwindcss": "^3.4.3"
+  }
+}
