@@ -59,7 +59,7 @@ nextBtn.addEventListener("click", () => {
   startSlideInterval(); 
 });
 
-// Previous Button
+
 prevBtn.addEventListener("click", () => {
   if (currentSlide <= 0) {
     goToSlide(numberOfImages - 1);
@@ -92,3 +92,19 @@ function setActiveClass() {
   currentDot.classList.remove("active");
   navigationDots.children[currentSlide].classList.add("active");
 }
+let lastWidth = window.innerWidth;
+let resizeTimeout;
+
+window.addEventListener('resize', function() {
+  
+  clearTimeout(resizeTimeout);
+
+  
+  resizeTimeout = setTimeout(function() {
+    
+    if (window.innerWidth !== lastWidth) {
+      location.reload();
+      lastWidth = window.innerWidth; 
+    }
+  }, 150); 
+});
