@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
     :root {
       --bc: #fafaff;
       --primary: #da2c4d;
@@ -18,6 +18,7 @@
       --paragraph: 1.1rem;
      
       --font-main:"Merriweather", serif;
+      --font-secondary: "Montserrat", sans-serif;
       --gradient-color: linear-gradient(90deg,
       hsl(48, 100%, 50%) 0%,
       hsl(28, 100%, 54%, 100%));
@@ -28,6 +29,9 @@
     }
     * {
       box-sizing: border-box;
+    }
+    span {
+      font-size: 28px;
     }
     html, body {
       margin: 0;
@@ -40,6 +44,12 @@
       justify-content: center;
       flex-direction: column;
       align-items: center;
+    }
+    .highlight {
+      background-color: #0047AB;
+      color: white;
+      padding: 1px 8px;
+      font-size: 25px;
     }
     h1 {
       margin: 0;
@@ -55,13 +65,14 @@
       margin: 0;
       width: 60%;
       font-weight: 300;
-      font-size: calc(var(--paragraph) + .25rem);
+      font-size: calc(var(--paragraph) + .15rem);
       color: var(--white);
       z-index: 25;
+      font-family: var(--font-secondary);
     }
     
     .title {
-      width: 55%;
+      width: 60%;
       height: 100%;
       display: flex;
       justify-content: center;
@@ -196,17 +207,26 @@
     .read-more-btn {
       background: var(--gradient-color);
       color: var(--black-color);
-      padding: 1rem 2rem;
-      border-radius: 25px;
+      height: 50px;
+      width: 170px;
+      /* border-radius: 25px; */
       border: 2px solid var(--black-color);
       cursor: pointer;
       font-weight: 700;
       font-size: 0.9rem;
       transition: background-color 0.3s ease;
       position: absolute;
-      bottom: 30%;
+      bottom: 28%;
       left: 27%;
       transform: translateX(-50%); 
+      overflow: hidden;
+    }
+    
+    .ripples {
+      border-radius: 50%;
+      background-color: transparent;
+      position: absolute;
+      transform: translate(-50%, -50%);
     }
     .read-more-btn:hover {
       background: var(--gradient-color-fade);
@@ -232,7 +252,11 @@
       }
       .read-more-btn {
         bottom: 22%;
-        left: 32%; 
+        left: 27%; 
+      }
+      .title {
+        width: 80%;
+        height: 100%;
       }
     }
     @media only screen and (max-width: 1024px) {
@@ -249,8 +273,12 @@
         
       }
       .read-more-btn {
-        bottom: 22%;
-        left: 32%; 
+        bottom: 18%;
+        left: 28.5%;  
+      }
+      .title {
+        width: 90%;
+        height: 100%;
       }
     }
     @media only screen and (max-width: 769px) {
@@ -270,7 +298,12 @@
         
       }
       .read-more-btn {
-        left: 37%;
+        left: 33%;
+        bottom: 16%;
+      }
+      .title {
+        width: 100%;
+        height: 100%;
       }
     }
     @media only screen and (max-width: 496px) {
@@ -359,5 +392,11 @@
       .read-more-btn {
         bottom: 8%; 
         left: 40%;
+      }
+      .prev-btn {
+        left: 0;
+      }
+      .next-btn {
+        right: 0;
       }
     }
