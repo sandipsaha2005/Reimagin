@@ -1,16 +1,16 @@
-import { useState } from 'react'
-import { TabsDemo } from './ui/UseTab'
-import {WavyBackgroundDemo} from './component/wavyback'
+import { useState } from 'react';
+import { TabsDemo } from './ui/UseTab';
+import { WavyBackgroundDemo } from './component/wavyback';
+
 function App() {
-  const [count, setCount] = useState(0)
+  const [count, setCount] = useState(0);
 
   return (
-    <>
-    {/* <TabsDemo/> */}
-    <WavyBackgroundDemo/>
-    {/* <h2 className='text-red font-serif'>jii</h2> */}
-    </>
-  )
+    <div className="bg-[#111] flex flex-col overflow-hidden">
+      <WavyBackgroundDemo />
+      <TabsDemo />
+    </div>
+  );
 }
 
-export default App
+export default App;

@@ -2,78 +2,63 @@
 
 import React from "react";
 import { Tabs } from "../component/Tabs";
-import {ThreeDCardDemo} from '../component/Card'
+import {ServiceCard} from '../component/Card'
+import {DeployCard} from '../component/Card'
+import {UpdateCard} from '../component/Card'
 export function TabsDemo() {
   const tabs = [
     {
-      title: "Product",
-      value: "product",
+      title: "Service",
+      value: "Service",
       content: (
         <div className="w-full overflow-hidden relative h-full rounded-2xl p-10 text-xl md:text-4xl font-bold text-white bg-gradient-to-br from-purple-700 to-violet-900">
-          <p>Product Tab</p>
-          <DummyContent />
+          <p>Choose your service type</p>
+          <ServiceContent />
         </div>
       ),
     },
     {
-      title: "Services",
-      value: "services",
+      title: "Deploy",
+      value: "Deploy",
       content: (
         <div className="w-full overflow-hidden relative h-full rounded-2xl p-10 text-xl md:text-4xl font-bold text-white bg-gradient-to-br from-purple-700 to-violet-900">
-          <p>Services tab</p>
-          <DummyContent />
+          <p>Deploy in seconds</p>
+          <DeployContent />
         </div>
       ),
     },
     {
-      title: "Playground",
-      value: "playground",
+      title: "Update",
+      value: "Update",
       content: (
         <div className="w-full overflow-hidden relative h-full rounded-2xl p-10 text-xl md:text-4xl font-bold text-white bg-gradient-to-br from-purple-700 to-violet-900">
-          <p>Playground tab</p>
-          <DummyContent />
+          <p>Update automatically</p>
+          <UpdateContent/>
         </div>
       ),
     },
-    {
-      title: "Content",
-      value: "content",
-      content: (
-        <div className="w-full overflow-hidden relative h-full rounded-2xl p-10 text-xl md:text-4xl font-bold text-white bg-gradient-to-br from-purple-700 to-violet-900">
-          <p>Content tab</p>
-          <DummyContent />
-        </div>
-      ),
-    },
-    {
-      title: "Random",
-      value: "random",
-      content: (
-        <div className="w-full overflow-hidden relative h-full rounded-2xl p-10 text-xl md:text-4xl font-bold  bg-gradient-to-br from-purple-700 to-violet-900">
-          <p>Random tab</p>
-          <DummyContent />
-        </div>
-      ),
-    },
+   
   ];
 
   return (
-    <div className="h-[20rem] md:h-[40rem] [perspective:1000px] relative b flex flex-col max-w-5xl mx-auto w-full items-start justify-start my-40">
+    <div className="h-[20rem] md:h-[40rem] [perspective:1000px] relative b flex flex-col max-w-3xl mx-auto w-full items-start justify-start my-40">
       <Tabs tabs={tabs} />
     </div>
   );
 }
 
-const DummyContent = () => {
+const ServiceContent = () => {
   return (
-    <div className='text-red-600 w-full h-full'>
-    {/* <img
-      src="/linear.webp"
-      alt="dummy image"
-      className="object-cover object-left-top h-[60%] md:h-[90%] absolute -bottom-10 inset-x-0 w-[90%] rounded-xl mx-auto"
-    /> */}
-    dfjlsdkfl
-    <ThreeDCardDemo/>
-    </div>
+      <ServiceCard/>
+  );
+};
+const DeployContent = () => {
+  return (
+      <DeployCard/>
+  );
+};
+const UpdateContent = () => {
+  return (
+      <UpdateCard/>
   );
 };
