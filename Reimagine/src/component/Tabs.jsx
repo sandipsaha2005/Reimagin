@@ -1,4 +1,4 @@
-"use client";
+
 
 import { useState } from "react";
 import { motion } from "framer-motion";
@@ -34,6 +34,7 @@ const Tabs = ({
       >
         {propTabs.map((tab, idx) => (
           <button
+          
             key={tab.title}
             onClick={() => {
               moveSelectedTabToTop(idx);
@@ -43,6 +44,8 @@ const Tabs = ({
             className={cn("relative px-4 py-2 rounded-full", tabClassName)}
             style={{
               transformStyle: "preserve-3d",
+              color:'red',
+              backgroundColor:'green'
             }}
           >
             {active.value === tab.value && (

@@ -2,7 +2,7 @@
 
 import React from "react";
 import { Tabs } from "../component/Tabs";
-
+import {ThreeDCardDemo} from '../component/Card'
 export function TabsDemo() {
   const tabs = [
     {
@@ -49,7 +49,7 @@ export function TabsDemo() {
       title: "Random",
       value: "random",
       content: (
-        <div className="w-full overflow-hidden relative h-full rounded-2xl p-10 text-xl md:text-4xl font-bold text-white bg-gradient-to-br from-purple-700 to-violet-900">
+        <div className="w-full overflow-hidden relative h-full rounded-2xl p-10 text-xl md:text-4xl font-bold  bg-gradient-to-br from-purple-700 to-violet-900">
           <p>Random tab</p>
           <DummyContent />
         </div>
@@ -66,13 +66,14 @@ export function TabsDemo() {
 
 const DummyContent = () => {
   return (
-    <>
+    <div className='text-red-600 w-full h-full'>
     {/* <img
       src="/linear.webp"
       alt="dummy image"
       className="object-cover object-left-top h-[60%] md:h-[90%] absolute -bottom-10 inset-x-0 w-[90%] rounded-xl mx-auto"
     /> */}
-    <h1>tab1</h1>
-    </>
+    dfjlsdkfl
+    <ThreeDCardDemo/>
+    </div>
   );
 };
