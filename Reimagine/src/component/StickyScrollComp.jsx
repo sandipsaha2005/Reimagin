@@ -5,12 +5,12 @@ import { StickyScroll } from "../ui/StickyScroll";
 
 const content = [
   {
-    title: "Automatic Deploys",
+    title: "Collaborative Editing",
     description:
-      "Your app is automatically updated on every push, with zero downtime.",
+      "Work together in real time with your team, clients, and stakeholders. Collaborate on documents, share ideas, and make decisions quickly. With our platform, you can streamline your workflow and increase productivity.",
     content: (
       <div className="h-full w-full bg-[linear-gradient(to_bottom_right,var(--cyan-500),var(--emerald-500))] flex items-center justify-center text-white">
-        <img src="https://cdn.sanity.io/images/hvk0tap5/production/108a2a3a856d5f5fdaf5cd7b4f448734df95ee5f-50x50.svg?w=100&fit=max&auto=format" alt="" />
+        Collaborative Editing
       </div>
     ),
   },
@@ -36,7 +36,7 @@ const content = [
       "Experience real-time updates and never stress about version control again. Our platform ensures that you're always working on the most recent version of your project, eliminating the need for constant manual updates. Stay in the loop, keep your team aligned, and maintain the flow of your work without any interruptions.",
     content: (
       <div className="h-full w-full bg-[linear-gradient(to_bottom_right,var(--orange-500),var(--yellow-500))] flex items-center justify-center text-white">
-        HEllo
+        Version control
       </div>
     ),
   },
