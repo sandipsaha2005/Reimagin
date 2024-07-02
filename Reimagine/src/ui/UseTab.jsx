@@ -13,7 +13,7 @@ export function TabsDemo() {
       title: "Service",
       value: "Service",
       content: (
-        <div className="w-full overflow-hidden relative h-full rounded-2xl p-10 text-xl md:text-4xl font-bold text-white bg-gradient-to-br from-purple-700 to-violet-900">
+        <div className="w-full overflow-hidden relative h-full rounded-2xl p-10 text-xl md:text-4xl font-bold text-white dark:bg-gradient-to-b from-black via-purple-900 to-purple-800">
           <p>Choose your service type</p>
           <ServiceContent/>
         </div>
@@ -23,7 +23,7 @@ export function TabsDemo() {
       title: "Deploy",
       value: "Deploy",
       content: (
-        <div className="w-full overflow-hidden relative h-full rounded-2xl p-10 text-xl md:text-4xl font-bold text-white bg-gradient-to-br from-purple-700 to-violet-900">
+        <div className="w-full overflow-hidden relative h-full rounded-2xl p-10 text-xl md:text-4xl font-bold text-white dark:bg-gradient-to-b from-black via-red-900 to-red-800">
           <p>Deploy in seconds</p>
           <DeployContent />
         </div>
@@ -33,7 +33,7 @@ export function TabsDemo() {
       title: "Update",
       value: "Update",
       content: (
-        <div className="w-full overflow-hidden relative h-full rounded-2xl p-10 text-xl md:text-4xl font-bold text-white bg-gradient-to-br from-purple-700 to-violet-900">
+        <div className="w-full overflow-hidden relative h-full rounded-2xl p-10 text-xl md:text-4xl font-bold text-white dark:bg-gradient-to-b from-black via-blue-900 to-blue-800">
           <p>Update automatically</p>
           <UpdateContent/>
         </div>

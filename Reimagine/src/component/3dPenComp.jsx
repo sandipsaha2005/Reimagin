@@ -15,7 +15,7 @@ export function AnimatedPinDemo() {
           </h3>
           <div className="text-sm !m-0 !p-0 font-normal">
             <span className="text-slate-500">
-            Easier than large clouds, more feature-rich than single-purpose hosting providers, Render lets me ship the entirety of my projects in one place.
+            "Easier than large clouds, more feature-rich than single-purpose hosting providers, Render lets me ship the entirety of my projects in one place."
             </span>
           </div>
           <div className="flex flex-1 w-full rounded-md mt-4 " />
