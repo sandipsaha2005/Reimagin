@@ -23,8 +23,8 @@ export function ServiceCard() {
         </CardItem>
         <CardItem
           translateZ={100}
-          rotateX={20}
-          rotateZ={-10}
+          // rotateX={20}
+          // rotateZ={-10}
           className="w-full mt-4"
         >
           <img
@@ -38,7 +38,7 @@ export function ServiceCard() {
         <div className="flex justify-between items-center mt-5">
           <CardItem
             translateZ={20}
-            translateX={-40}
+            // translateX={-40}
             as="button"
             className="px-4 py-2 rounded-xl text-xs font-normal dark:text-white"
           >
@@ -46,7 +46,7 @@ export function ServiceCard() {
           </CardItem>
           <CardItem
             translateZ={20}
-            translateX={40}
+            // translateX={40}
             as="button"
             className="px-4 py-2 rounded-xl bg-black dark:bg-white dark:text-black text-white text-xs font-bold"
           >
@@ -76,8 +76,8 @@ export function DeployCard(){
       </CardItem>
       <CardItem
         translateZ={100}
-        rotateX={20}
-        rotateZ={-10}
+        // rotateX={20}
+        // rotateZ={-10}
         className="w-full mt-4"
       >
         <img
@@ -91,7 +91,7 @@ export function DeployCard(){
       <div className="flex justify-between items-center mt-5">
         <CardItem
           translateZ={20}
-          translateX={-40}
+          // translateX={-40}
           as="button"
           className="px-4 py-2 rounded-xl text-xs font-normal dark:text-white"
         >
@@ -99,7 +99,7 @@ export function DeployCard(){
         </CardItem>
         <CardItem
           translateZ={20}
-          translateX={40}
+          // translateX={40}
           as="button"
           className="px-4 py-2 rounded-xl bg-black dark:bg-white dark:text-black text-white text-xs font-bold"
         >
@@ -129,8 +129,8 @@ export function UpdateCard(){
       </CardItem>
       <CardItem
         translateZ={100}
-        rotateX={20}
-        rotateZ={-10}
+        // rotateX={20}
+        // rotateZ={-10}
         className="w-full mt-4"
       >
         <img
@@ -144,7 +144,7 @@ export function UpdateCard(){
       <div className="flex justify-between items-center mt-6">
         <CardItem
           translateZ={20}
-          translateX={-40}
+          // translateX={-40}
           as="button"
           className="px-4 py-2 rounded-xl text-xs font-normal dark:text-white"
         >
@@ -152,7 +152,7 @@ export function UpdateCard(){
         </CardItem>
         <CardItem
           translateZ={20}
-          translateX={40}
+          // translateX={40}
           as="button"
           className="px-4 py-2 rounded-xl bg-black dark:bg-white dark:text-black text-white text-xs font-bold"
         >

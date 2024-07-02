@@ -19,9 +19,9 @@ function App() {
       <InfiniteMovingCardsDemo/>
       <AnimatedPinDemo/>
       <HeroHighlightDemo/>
-      <WobbleCardDemo/>
       <StickyScrollRevealDemo/>
-      <ThreeDCardDemo/>
+      <WobbleCardDemo/>
+      {/* <ThreeDCardDemo/> */}
     </div>
   );
 }
