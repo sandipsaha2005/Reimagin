@@ -18,11 +18,13 @@ import { GridSmallBackgroundDemo } from './component/Background3'
 import { CanvasRevealEffectDemo } from './component/CardScrollComp'
 import { LampDemo } from './component/Lamp'
 function App() {
-
+  
   return (
     <div className="bg-[#111] flex flex-col overflow-hidden">
+      {/* <ThreeDCardDemo/> */}
       {/* <HeroHighlightDemo/> */}
       {/* <ThreeDCardDemo/> */}
+      {/* <WobbleCardDemo/> */}
       {/* <FloatingNavDemo/> */}
       {/* <WobbleCardDemo/> */}
 
@@ -44,8 +46,6 @@ function App() {
       <AnimatedPinDemo/>
       <Company />
 
-      <WobbleCardDemo/>
-      {/* <ThreeDCardDemo/> */}
       <CanvasRevealEffectDemo/>
       <LampDemo/>
     </div>

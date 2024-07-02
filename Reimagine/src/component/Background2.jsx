@@ -13,7 +13,7 @@ export function DotBackgroundDemo() {
         alongside you.
         <br />
         <button className="text-base mt-20 shadow-[0_4px_14px_0_rgb(0,118,255,39%)] hover:shadow-[0_6px_20px_rgba(0,118,255,23%)] hover:bg-[rgba(0,118,255,0.9)] px-5 py-2 bg-[#11529d] rounded-md text-white font-light transition duration-200 ease-linear">
-          Next.js Blue
+        Confidence Matter
         </button>
       </p>
     </div>
