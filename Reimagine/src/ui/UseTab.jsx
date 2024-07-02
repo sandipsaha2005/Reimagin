@@ -5,6 +5,7 @@ import { Tabs } from "../component/Tabs";
 import {ServiceCard} from '../component/Card'
 import {DeployCard} from '../component/Card'
 import {UpdateCard} from '../component/Card'
+import { ThreeDCardDemo } from '../component/3dCard'
 export function TabsDemo() {
   const tabs = [
     {
