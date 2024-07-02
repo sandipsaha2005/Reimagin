@@ -42,9 +42,14 @@ export function TabsDemo() {
   ];
 
   return (
-    <div className="h-[20rem] md:h-[40rem] [perspective:1000px] relative b flex flex-col max-w-3xl mx-auto w-full items-start justify-start my-40">
+    <>
+     <p className="dark:text-white text-neutral-600 text-center text-6xl mt-10 font-bold">
+          Click, click, done.
+      </p>
+    <div className="h-[20rem] md:h-[40rem] [perspective:1000px] relative b flex flex-col max-w-3xl mx-auto w-full items-start justify-start mt-16 mb-40">
       <Tabs tabs={tabs} />
     </div>
+    </>
   );
 }
 
