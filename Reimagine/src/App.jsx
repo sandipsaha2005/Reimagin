@@ -18,6 +18,7 @@ import { DotBackgroundDemo } from './component/Background2'
 import { GridSmallBackgroundDemo } from './component/Background3'
 import { CanvasRevealEffectDemo } from './component/CardScrollComp'
 import { LampDemo } from './component/Lamp'
+import { LinkPreviewDemo } from './component/linkTextComponet'
 import Footer from './component/Footer';
 function App() {
   
@@ -46,7 +47,8 @@ function App() {
       <StickyScrollMain3/>
       {/* Footer */}
       <AnimatedPinDemo/>
-      <Company />
+      <LinkPreviewDemo/>
+      {/* <Company /> */}
 
       <CanvasRevealEffectDemo/>
       <LampDemo/>
