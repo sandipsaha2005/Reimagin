@@ -19,9 +19,9 @@ function App() {
       {/* <FloatingNavDemo/> */}
       <TabsDemo />
       <InfiniteMovingCardsDemo/>
-      <AnimatedPinDemo/>
       <HeroHighlightDemo/>
       <StickyScrollRevealDemo/>
+      <AnimatedPinDemo/>
       <WobbleCardDemo/>
       {/* <ThreeDCardDemo/> */}
     </div>
