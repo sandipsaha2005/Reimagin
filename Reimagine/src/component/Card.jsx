@@ -35,7 +35,7 @@ export function ServiceCard() {
             alt="thumbnail"
           />
         </CardItem>
-        <div className="flex justify-between items-center mt-10">
+        <div className="flex justify-between items-center mt-5">
           <CardItem
             translateZ={20}
             translateX={-40}
