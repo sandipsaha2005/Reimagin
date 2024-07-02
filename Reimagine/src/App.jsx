@@ -15,7 +15,8 @@ import { NavbarDemo } from './component/FixedNavComp'
 import { GridBackgroundDemo } from './component/Background1'
 import { DotBackgroundDemo } from './component/Background2'
 import { GridSmallBackgroundDemo } from './component/Background3'
-
+import { CanvasRevealEffectDemo } from './component/CardScrollComp'
+import { LampDemo } from './component/Lamp'
 function App() {
 
   return (
@@ -41,6 +42,8 @@ function App() {
 
       <WobbleCardDemo/>
       {/* <ThreeDCardDemo/> */}
+      <CanvasRevealEffectDemo/>
+      <LampDemo/>
     </div>
   );
 }
