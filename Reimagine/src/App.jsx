@@ -9,6 +9,9 @@ import { WobbleCardDemo } from './component/WorbbleCardComp'
 import { StickyScrollRevealDemo } from './component/StickyScrollComp'
 import { ThreeDCardDemo } from './component/3dCard'
 import { NavbarDemo } from './component/FixedNavComp'
+import { GridBackgroundDemo } from './component/Background1'
+import { DotBackgroundDemo } from './component/Background2'
+import { GridSmallBackgroundDemo } from './component/Background3'
 function App() {
   const [count, setCount] = useState(0);
 
@@ -24,6 +27,9 @@ function App() {
       <AnimatedPinDemo/>
       <WobbleCardDemo/>
       {/* <ThreeDCardDemo/> */}
+      <GridBackgroundDemo/>
+      <DotBackgroundDemo/>
+      <GridSmallBackgroundDemo/>
     </div>
   );
 }
