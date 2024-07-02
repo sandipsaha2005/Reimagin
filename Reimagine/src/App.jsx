@@ -1,4 +1,4 @@
-import { useState } from 'react';
+// import { useState } from 'react';
 import { TabsDemo } from './ui/UseTab';
 import { WavyBackgroundDemo } from './component/wavyback';
 import { InfiniteMovingCardsDemo } from './component/infinitMovingCardComp'
@@ -6,7 +6,7 @@ import { InfiniteMovingCardsDemo } from './component/infinitMovingCardComp'
 import { AnimatedPinDemo } from './component/3dPenComp'
 import { HeroHighlightDemo } from './component/Hero-heightlightComp'
 import { WobbleCardDemo } from './component/WorbbleCardComp'
-import { StickyScrollRevealDemo } from './component/StickyScrollComp'
+import { StickyScrollMain1 } from './component/StickyScrollComp1'
 // import { ThreeDCardDemo } from './component/3dCard'
 import Company from './component/Company';
 import { NavbarDemo } from './component/FixedNavComp'
@@ -22,13 +22,13 @@ function App() {
       {/* <FloatingNavDemo/> */}
       <TabsDemo />
       <InfiniteMovingCardsDemo/>
-      <HeroHighlightDemo/>
-      <StickyScrollRevealDemo/>
+      {/* <HeroHighlightDemo/> */}
+      <GridBackgroundDemo/>
+      <StickyScrollMain1/>
       <AnimatedPinDemo/>
       <Company />
       <WobbleCardDemo/>
       {/* <ThreeDCardDemo/> */}
-      <GridBackgroundDemo/>
       <DotBackgroundDemo/>
       <GridSmallBackgroundDemo/>
     </div>

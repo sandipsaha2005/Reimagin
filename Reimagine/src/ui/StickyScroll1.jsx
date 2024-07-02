@@ -4,7 +4,7 @@ import { useMotionValueEvent, useScroll } from "framer-motion";
 import { motion } from "framer-motion";
 import { cn } from "../utils/cn";
 
-export const StickyScroll = ({
+export const StickyScroll1 = ({
   content,
   contentClassName,
 }) => {
@@ -38,7 +38,6 @@ export const StickyScroll = ({
     "#72001b", 
     '#450a0a',
     "#260009",
-    
   ];
   
   const linearGradients = [

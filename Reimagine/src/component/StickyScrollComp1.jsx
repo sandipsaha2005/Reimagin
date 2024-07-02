@@ -1,6 +1,6 @@
 "use client";
 import React from "react";
-import { StickyScroll } from "../ui/StickyScroll";
+import { StickyScroll1 } from "../ui/StickyScroll1";
 // import Image from "next/image";
 
 const content = [
@@ -70,10 +70,10 @@ const content = [
   },
 ];
 
-export function StickyScrollRevealDemo() {
+export function StickyScrollMain1() {
   return (
     <div className="p-5">
-      <StickyScroll content={content} />
+      <StickyScroll1 content={content} />
     </div>
   );
 }
