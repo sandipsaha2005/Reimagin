@@ -20,27 +20,28 @@ function App() {
 
   return (
     <div className="bg-[#111] flex flex-col overflow-hidden">
+      {/* <HeroHighlightDemo/> */}
+      {/* <ThreeDCardDemo/> */}
+      {/* <FloatingNavDemo/> */}
+      {/* <WobbleCardDemo/> */}
+
+      {/* Header  */}
       <NavbarDemo/>
       <WavyBackgroundDemo />
-      {/* <FloatingNavDemo/> */}
       <TabsDemo />
       <InfiniteMovingCardsDemo/>
-      {/* <HeroHighlightDemo/> */}
-      {/* ................. */}
+      {/* mid1 */}
       <GridBackgroundDemo/>
       <StickyScrollMain1/>
-      {/* ............... */}
+      {/* mid2 */}
       <DotBackgroundDemo/>
       <StickyScrollMain2/>
-      {/* ..................... */}
+      {/* mid3 */}
       <GridSmallBackgroundDemo/>
       <StickyScrollMain3/>
-      {/* ......................... */}
+      {/* Footer */}
       <AnimatedPinDemo/>
       <Company />
-
-      <WobbleCardDemo/>
-      {/* <ThreeDCardDemo/> */}
     </div>
   );
 }
