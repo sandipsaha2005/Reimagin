@@ -7,6 +7,7 @@ import { AnimatedPinDemo } from './component/3dPenComp'
 import { HeroHighlightDemo } from './component/Hero-heightlightComp'
 import { WobbleCardDemo } from './component/WorbbleCardComp'
 import { StickyScrollRevealDemo } from './component/StickyScrollComp'
+import { ThreeDCardDemo } from './component/3dCard'
 function App() {
   const [count, setCount] = useState(0);
 
@@ -20,6 +21,7 @@ function App() {
       <HeroHighlightDemo/>
       <WobbleCardDemo/>
       <StickyScrollRevealDemo/>
+      <ThreeDCardDemo/>
     </div>
   );
 }
