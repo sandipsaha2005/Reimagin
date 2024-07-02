@@ -8,8 +8,8 @@ import React from 'react';
 const TrustedBy = () => {
   return (
     <div className="bg-[#111] text-center py-8 my-10">
-      <h2 className="text-gray-400 text-3xl mb-8">Trusted by over a million developers and teams</h2>
-      <div className="flex justify-around items-center text-white">
+      <h2 className="text-zinc-700 text-3xl mb-8">Trusted by over a million developers and teams</h2>
+      <div className="flex justify-around items-center invert">
         <img src="https://cdn.sanity.io/images/hvk0tap5/production/496d78a30eec55b7b39eb68f86ec06aaff05a1e1-163x38.svg?w=400&fit=max&auto=format" alt="Equals" className="h-12 mx-4 grayscale hover:grayscale-0 transition duration-300"/>
         <img src="https://cdn.sanity.io/images/hvk0tap5/production/646e016250d4557c4694165243f6349de6d58926-178x36.svg?w=400&fit=max&auto=format" alt="Watershed" className="h-12 mx-4 grayscale hover:grayscale-0 transition duration-300" />
         <img src="https://cdn.sanity.io/images/hvk0tap5/production/eb58014b87c1b8ce98096a1fc129a1a6a02ba0f2-159x32.svg?w=400&fit=max&auto=format" alt="RedBull" className="h-12 mx-4 grayscale hover:grayscale-0 transition duration-300" />

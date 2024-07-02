@@ -1,4 +1,3 @@
-import React, { useState } from "react";
 import logo from "../assets/render-logo.png";
 const ComponentName = () => {
   return (

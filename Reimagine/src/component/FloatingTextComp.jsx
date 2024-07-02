@@ -5,15 +5,15 @@ export function TypewriterEffectSmoothDemo() {
   const words = [
     {
       text: "Click",
-      className: "text-red-500 dark:text-purple-900",
+      className: "dark:text-zinc-700",
     },
     {
       text: "click",
-      className: "text-green-500 dark:text-red-900",
+      className: "dark:text-zinc-800",
     },
     {
       text: "Done",
-      className: "text-blue-500 dark:text-blue-900",
+      className: "dark:text-zinc-900",
     },
     // {
     //   text: "with",
