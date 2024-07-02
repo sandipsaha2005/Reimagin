@@ -15,7 +15,7 @@ export function TabsDemo() {
       content: (
         <div className="w-full overflow-hidden relative h-full rounded-2xl p-10 text-xl md:text-4xl font-bold text-white bg-gradient-to-br from-purple-700 to-violet-900">
           <p>Choose your service type</p>
-          <ThreeDCardDemo />
+          <ServiceContent/>
         </div>
       ),
     },
