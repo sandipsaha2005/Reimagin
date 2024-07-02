@@ -8,11 +8,11 @@ export function TypewriterEffectSmoothDemo() {
       className: "text-red-500 dark:text-purple-900",
     },
     {
-      text: "Click",
+      text: "click",
       className: "text-green-500 dark:text-red-900",
     },
     {
-      text: "Click",
+      text: "Done",
       className: "text-blue-500 dark:text-blue-900",
     },
     // {

@@ -17,6 +17,7 @@ import { DotBackgroundDemo } from './component/Background2'
 import { GridSmallBackgroundDemo } from './component/Background3'
 import { CanvasRevealEffectDemo } from './component/CardScrollComp'
 import { LampDemo } from './component/Lamp'
+import Footer from './component/Footer';
 function App() {
   
   return (
@@ -48,6 +49,7 @@ function App() {
 
       <CanvasRevealEffectDemo/>
       <LampDemo/>
+      <Footer/>
     </div>
   );
 }
