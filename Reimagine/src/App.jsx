@@ -1,3 +1,4 @@
+import React from 'react';
 // import { useState } from 'react';
 import { TabsDemo } from './ui/UseTab';
 import { WavyBackgroundDemo } from './component/wavyback';
@@ -5,7 +6,7 @@ import { InfiniteMovingCardsDemo } from './component/infinitMovingCardComp'
 // import { FloatingNavDemo } from './component/FloatinNavComp'
 import { AnimatedPinDemo } from './component/3dPenComp'
 // import { HeroHighlightDemo } from './component/Hero-heightlightComp'
-import { WobbleCardDemo } from './component/WorbbleCardComp'
+// import { WobbleCardDemo } from './component/WorbbleCardComp'
 import { StickyScrollMain1 } from './component/StickyScrollComp1'
 import { StickyScrollMain2 } from './component/StickyScrollComp2'
 import { StickyScrollMain3 } from './component/StickyScrollComp3'
