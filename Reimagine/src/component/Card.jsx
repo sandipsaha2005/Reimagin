@@ -7,7 +7,7 @@ import { CardBody, CardContainer, CardItem } from "../ui/CardThings";
 export function ServiceCard() {
   return (
     <CardContainer className="inter-var">
-      <CardBody className="bg-gray-50 relative group/card dark:hover:shadow-2xl dark:hover:shadow-emerald-500/[0.1] dark:bg-zinc-900 dark:border-white/[0.2] border-black/[0.1] w-auto sm:w-[30rem] h-auto rounded-xl p-6 border">
+      <CardBody className=" relative group/card hover:shadow-2xl hover:shadow-emerald-500/[0.1] bg-zinc-900 border-white/[0.2] border-black/[0.1] w-auto sm:w-[30rem] h-auto rounded-xl p-6 border">
         <CardItem
           translateZ={50}
           className="text-xl font-bold text-neutral-600 dark:text-white"
@@ -60,7 +60,7 @@ export function ServiceCard() {
 export function DeployCard(){
   return(
     <CardContainer className="inter-var">
-    <CardBody className="bg-gray-50 relative group/card dark:hover:shadow-2xl dark:hover:shadow-emerald-500/[0.1] dark:bg-black dark:border-white/[0.2] border-black/[0.1] w-auto sm:w-[30rem] h-auto rounded-xl p-6 border">
+    <CardBody className="bg-gray-50 relative group/card hover:shadow-2xl hover:shadow-emerald-500/[0.1] bg-black border-white/[0.2] border-black/[0.1] w-auto sm:w-[30rem] h-auto rounded-xl p-6 border">
       <CardItem
         translateZ={50}
         className="text-xl font-bold text-neutral-600 dark:text-white"
@@ -113,7 +113,7 @@ export function DeployCard(){
 export function UpdateCard(){
   return(
     <CardContainer className="inter-var">
-    <CardBody className="bg-gray-50 relative group/card dark:hover:shadow-2xl dark:hover:shadow-emerald-500/[0.1] dark:bg-stone-900 dark:border-white/[0.2] border-black/[0.1] w-auto sm:w-[30rem] h-auto rounded-xl p-6 border">
+    <CardBody className=" relative group/card hover:shadow-2xl hover:shadow-emerald-500/[0.1] bg-stone-900 border-white/[0.2] border-black/[0.1] w-auto sm:w-[30rem] h-auto rounded-xl p-6 border">
       <CardItem
         translateZ={50}
         className="text-xl font-bold text-neutral-600 dark:text-white"
