@@ -8,13 +8,15 @@ import { HeroHighlightDemo } from './component/Hero-heightlightComp'
 import { WobbleCardDemo } from './component/WorbbleCardComp'
 import { StickyScrollRevealDemo } from './component/StickyScrollComp'
 import { ThreeDCardDemo } from './component/3dCard'
+import { NavbarDemo } from './component/FixedNavComp'
 function App() {
   const [count, setCount] = useState(0);
 
   return (
     <div className="bg-[#111] flex flex-col overflow-hidden">
+      <NavbarDemo/>
       <WavyBackgroundDemo />
-      <FloatingNavDemo/>
+      {/* <FloatingNavDemo/> */}
       <TabsDemo />
       <InfiniteMovingCardsDemo/>
       <AnimatedPinDemo/>
