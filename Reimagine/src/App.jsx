@@ -15,6 +15,7 @@ import { NavbarDemo } from './component/FixedNavComp'
 import { GridBackgroundDemo } from './component/Background1'
 import { DotBackgroundDemo } from './component/Background2'
 import { GridSmallBackgroundDemo } from './component/Background3'
+
 function App() {
 
   return (
@@ -37,6 +38,7 @@ function App() {
       {/* ......................... */}
       <AnimatedPinDemo/>
       <Company />
+
       <WobbleCardDemo/>
       {/* <ThreeDCardDemo/> */}
     </div>
