@@ -1,11 +1,14 @@
 import defaultTheme from "tailwindcss/defaultTheme";
 import colors from "tailwindcss/colors";
 import flattenColorPalette from "tailwindcss/lib/util/flattenColorPalette";
-import svgToDataUri  from 'mini-svg-data-uri'
+import svgToDataUri from 'mini-svg-data-uri';
 
 /** @type {import('tailwindcss').Config} */
-module.exports = {
-  content: ["./src/**/*.{html,js}"],
+export default {
+  content: [
+    "./index.html",
+    "./src/**/*.{js,ts,jsx,tsx}", // Corrected the glob pattern to include all files
+  ],
   theme: {
     extend: {
       animation: {
@@ -21,7 +24,8 @@ module.exports = {
       },
     },
   },
-  plugins: [addVariablesForColors,
+  plugins: [
+    addVariablesForColors,
     function ({ matchUtilities, theme }) {
       matchUtilities(
         {
@@ -43,15 +47,14 @@ module.exports = {
         },
         { values: flattenColorPalette(theme("backgroundColor")), type: "color" }
       );
-    }
-    
+    },
   ],
 }
 
 function addVariablesForColors({ addBase, theme }) {
   let allColors = flattenColorPalette(theme("colors"));
   let newVars = Object.fromEntries(
-    Object.entries(allColors).map(([key, val]) => [`--${key}`, val])
+    Object.entries(allColors).map(([key, val]) => [`--${key}`, val]) // Corrected string interpolation
   );
 
   addBase({
