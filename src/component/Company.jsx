@@ -20,7 +20,7 @@ const TrustedBy = () => {
           alt="Equals"
           className="h-12 mx-4 grayscale hover:grayscale-0 transition duration-300"
         />
-        <button data-popover-target="popover-default" type="button" class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Default popover</button>
+        <button data-popover-target="popover-default" type="button" className="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Default popover</button>
 
         <img
           src="https://cdn.sanity.io/images/hvk0tap5/production/646e016250d4557c4694165243f6349de6d58926-178x36.svg?w=400&fit=max&auto=format"

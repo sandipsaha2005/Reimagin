@@ -24,7 +24,7 @@ function Navbar({ className }) {
         <MenuItem setActive={setActive} active={active} item="PRODUCTS">
           <div className="flex gap-3">
             <div className="flex flex-col space-y-4 text-sm">
-              <p className=" font-bold text-lg text-blue-400">FEATURES</p>
+              <p className=" font-bold text-lg text-green-400">FEATURES</p>
               <HoveredLink to="/web-dev">Autoscaling</HoveredLink>
               <HoveredLink to="/interface-design">Private Networking</HoveredLink>
               <HoveredLink to="/seo">Managed PostgreSQL</HoveredLink>
@@ -36,7 +36,7 @@ function Navbar({ className }) {
               <HoveredLink to="/branding">Render API</HoveredLink>
             </div>
             <div className="flex flex-col space-y-4 text-sm">
-              <p className=" font-bold text-lg text-blue-400">SERVICES</p>
+              <p className=" font-bold text-lg text-green-400">SERVICES</p>
               <HoveredLink to="/web-dev">Static Sites</HoveredLink>
               <HoveredLink to="/interface-design">Web Services</HoveredLink>
               <HoveredLink to="/seo">Private Services</HoveredLink>
@@ -46,7 +46,7 @@ function Navbar({ className }) {
               <HoveredLink to="/branding">Redis</HoveredLink>
             </div>
             <div className="flex flex-col space-y-4 text-sm">
-              <p className=" font-bold text-lg text-blue-400">RUNTIMES</p>
+              <p className=" font-bold text-lg text-green-400">RUNTIMES</p>
               <HoveredLink to="/web-dev">Node</HoveredLink>
               <HoveredLink to="/interface-design">Docker</HoveredLink>
               <HoveredLink to="/seo">Static Sites</HoveredLink>

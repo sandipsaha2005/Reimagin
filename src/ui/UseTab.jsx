@@ -49,7 +49,7 @@ export function TabsDemo() {
           <TypewriterEffectSmoothDemo/>
          {/* <span  className="text-purple-900">Click,</span><span className="text-red-900">click,</span><span className="text-blue-900">done.</span> */}
       </p>
-    <div className="h-[20rem] md:h-[40rem] [perspective:1000px] relative b flex flex-col max-w-3xl mx-auto w-full items-start justify-start mt-16 mb-40">
+    <div className="h-[20rem] md:h-[40rem] [perspective:1000px] relative b flex flex-col max-w-3xl mx-auto w-full items-start justify-start mt-2 mb-40">
       <Tabs tabs={tabs} />
     </div>
     </>

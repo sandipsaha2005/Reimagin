@@ -1,45 +1,56 @@
-
 import { InfiniteMovingCards } from "../ui/InfiMoving";
 
 export function InfiniteMovingCardsDemo() {
-    const testimonials = [
-      {
-        quote:
-          "It was the best of times, it was the worst of times, it was the age of wisdom, it was the age of foolishness, it was the epoch of belief, it was the epoch of incredulity, it was the season of Light, it was the season of Darkness, it was the spring of hope, it was the winter of despair.",
-        name: "Charles Dickens",
-        title: "A Tale of Two Cities",
-      },
-      {
-        quote:
-          "To be, or not to be, that is the question: Whether 'tis nobler in the mind to suffer The slings and arrows of outrageous fortune, Or to take Arms against a Sea of troubles, And by opposing end them: to die, to sleep.",
-        name: "William Shakespeare",
-        title: "Hamlet",
-      },
-      {
-        quote: "All that we see or seem is but a dream within a dream.",
-        name: "Edgar Allan Poe",
-        title: "A Dream Within a Dream",
-      },
-      {
-        quote:
-          "It is a truth universally acknowledged, that a single man in possession of a good fortune, must be in want of a wife.",
-        name: "Jane Austen",
-        title: "Pride and Prejudice",
-      },
-      {
-        quote:
-          "Call me Ishmael. Some years ago—never mind how long precisely—having little or no money in my purse, and nothing particular to interest me on shore, I thought I would sail about a little and see the watery part of the world.",
-        name: "Herman Melville",
-        title: "Moby-Dick",
-      },
-    ];
-    return (
-      <div className="h-[40rem] rounded-md flex flex-col antialiased bg-white dark:bg-black dark:bg-grid-white/[0.05] items-center justify-center relative overflow-hidden">
-        <InfiniteMovingCards
-          items={testimonials}
-          direction="right"
-          speed="slow"
-        />
-      </div>
-    );
-  }
+  const testimonials = [
+    {
+      image: "https://cdn.sanity.io/images/hvk0tap5/production/ca02977a981b37669039b8b14516407973f97ac9-48x41.svg?w=100&fit=max&auto=format",
+    },
+    {
+      image: "https://cdn.sanity.io/images/hvk0tap5/production/05f6781e6a954b176d6d31dd1b60428e66baacec-55x20.svg?w=100&fit=max&auto=format",
+    },
+    {
+      image: "https://cdn.sanity.io/images/hvk0tap5/production/2635c71404f99add72c526c4922111f524e9cf06-43x51.svg?w=100&fit=max&auto=format",
+    },
+    {
+      image: "https://cdn.sanity.io/images/hvk0tap5/production/e50eee9a9cd8df87180afd769c360c1260377118-47x48.svg?w=100&fit=max&auto=format",
+    },
+    {
+      image: "https://cdn.sanity.io/images/hvk0tap5/production/8431bd8fb81a98f61e4445690e68a0e446eb5652-44x44.svg?w=100&fit=max&auto=format",
+    },
+    {
+      image: "https://cdn.sanity.io/images/hvk0tap5/production/0babc1679a4f22bf7fa381dea49530022e3bba7b-43x42.svg?w=100&fit=max&auto=format",
+    },
+    {
+      image: "https://cdn.sanity.io/images/hvk0tap5/production/2f413939513e2e04329d600164980fe4cee63961-43x42.svg?w=100&fit=max&auto=format",
+    },
+    {
+      image: "https://cdn.sanity.io/images/hvk0tap5/production/4742f9dcf2aceb681e4054500edb768af246fdf1-43x42.svg?w=100&fit=max&auto=format",
+    },
+    {
+      image: "https://cdn.sanity.io/images/hvk0tap5/production/ce9ae0e9f55eeb57d3d3b4ecacf21fabbe32c44c-42x42.svg?w=100&fit=max&auto=format",
+    },
+    {
+      image: "https://cdn.sanity.io/images/hvk0tap5/production/65e12174266a778516ef5700d6949c7abb808b8f-43x42.svg?w=100&fit=max&auto=format",
+    },
+    {
+      image: "https://cdn.sanity.io/images/hvk0tap5/production/1ffb50ecf2bb72b8ffcf3c973598afe965e4a957-47x40.svg?w=100&fit=max&auto=format",
+    },
+    {
+      image:"https://cdn.sanity.io/images/hvk0tap5/production/6fca86af8e2c89b257587ccef7000469c267d190-45x48.svg?w=100&fit=max&auto=format"
+    },
+    {
+      image:"https://cdn.sanity.io/images/hvk0tap5/production/23c9204e5cf6cd814cb85f60417f85df0050bb46-43x38.svg?w=100&fit=max&auto=format"
+    },
+  ];
+
+  return (
+    <div className="h-[40rem] rounded-md flex flex-col antialiased bg-gradient-to-b from-[#111] to-black  items-center justify-center relative overflow-hidden">
+      <p className="text-6xl font-bold bg-gradient-to-l from-purple-900 via-red-900 to-blue-900 text-transparent bg-clip-text mb-20">Whatever your stack, it runs on Render.</p>
+      <InfiniteMovingCards
+        items={testimonials}
+        direction="right"
+        speed="normal"
+      />
+    </div>
+  );
+}

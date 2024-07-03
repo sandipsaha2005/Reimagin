@@ -3,7 +3,7 @@ const ComponentName = () => {
   return (
     <section className="py-10 bg-[#030616] text-white sm:pt-16 lg:pt-24">
       <div className="px-4 mx-auto sm:px-6 lg:px-8 max-w-7xl">
-        <div className="grid grid-cols-2 md:col-span-3 lg:grid-cols-6 gap-y-16 gap-x-12">
+        <div className="grid grid-cols-3 md:col-span-3 lg:grid-cols-6 gap-y-14 gap-x-12">
           <div className="col-span-2 md:col-span-3 lg:col-span-2 lg:pr-8">
             <img className="w-auto h-9 invert" src={logo} alt="" />
 
@@ -90,7 +90,191 @@ const ComponentName = () => {
 
           <div>
             <p className="text-sm font-semibold tracking-widest text-emerald-500 uppercase">
-              Company
+            FEATURES
+            </p>
+
+            <ul className="mt-6 space-y-4">
+              <li>
+                <a
+                  href="#"
+                  title=""
+                  className="flex text-base text-white transition-all duration-200 hover:text-blue-600 focus:text-blue-600"
+                >
+                  {" "}
+                  Autoscaling{" "}
+                </a>
+              </li>
+
+              <li>
+                <a
+                  href="#"
+                  title=""
+                  className="flex text-base text-white transition-all duration-200 hover:text-blue-600 focus:text-blue-600"
+                >
+                  {" "}
+                  Private Networking{" "}
+                </a>
+              </li>
+
+              <li>
+                <a
+                  href="#"
+                  title=""
+                  className="flex text-base text-white transition-all duration-200 hover:text-blue-600 focus:text-blue-600"
+                >
+                  {" "}
+                  Managed PostgreSQL{" "}
+                </a>
+              </li>
+
+              <li>
+                <a
+                  href="#"
+                  title=""
+                  className="flex text-base text-white transition-all duration-200 hover:text-blue-600 focus:text-blue-600"
+                >
+                  {" "}
+                  Managed Redis{" "}
+                </a>
+              </li>
+              <li>
+                <a
+                  href="#"
+                  title=""
+                  className="flex text-base text-white transition-all duration-200 hover:text-blue-600 focus:text-blue-600"
+                >
+                  {" "}
+                  Persistent Disks{" "}
+                </a>
+              </li>
+              <li>
+                <a
+                  href="#"
+                  title=""
+                  className="flex text-base text-white transition-all duration-200 hover:text-blue-600 focus:text-blue-600"
+                >
+                  {" "}
+                  Infrastructure As Code{" "}
+                </a>
+              </li>
+              <li>
+                <a
+                  href="#"
+                  title=""
+                  className="flex text-base text-white transition-all duration-200 hover:text-blue-600 focus:text-blue-600"
+                >
+                  {" "}
+                  Preview Environments{" "}
+                </a>
+              </li>
+              <li>
+                <a
+                  href="#"
+                  title=""
+                  className="flex text-base text-white transition-all duration-200 hover:text-blue-600 focus:text-blue-600"
+                >
+                  {" "}
+                  Zero Downtime Deploys{" "}
+                </a>
+              </li>
+              <li>
+                <a
+                  href="#"
+                  title=""
+                  className="flex text-base text-white transition-all duration-200 hover:text-blue-600 focus:text-blue-600"
+                >
+                  {" "}
+                  Zero Downtime Deploys{" "}
+                </a>
+              </li>
+            </ul>
+          </div>
+
+          <div>
+            <p className="text-sm font-semibold tracking-widest text-emerald-500 uppercase">
+            SERVICES
+            </p>
+
+            <ul className="mt-6 space-y-4">
+              <li>
+                <a
+                  href="#"
+                  title=""
+                  className="flex text-base text-white transition-all duration-200 hover:text-blue-600 focus:text-blue-600"
+                >
+                  {" "}
+                  Static Sites{" "}
+                </a>
+              </li>
+
+              <li>
+                <a
+                  href="#"
+                  title=""
+                  className="flex text-base text-white transition-all duration-200 hover:text-blue-600 focus:text-blue-600"
+                >
+                  {" "}
+                  Web Services{" "}
+                </a>
+              </li>
+
+              <li>
+                <a
+                  href="#"
+                  title=""
+                  className="flex text-base text-white transition-all duration-200 hover:text-blue-600 focus:text-blue-600"
+                >
+                  {" "}
+                  Private Services{" "}
+                </a>
+              </li>
+
+              <li>
+                <a
+                  href="#"
+                  title=""
+                  className="flex text-base text-white transition-all duration-200 hover:text-blue-600 focus:text-blue-600"
+                >
+                  {" "}
+                  Background Workers{" "}
+                </a>
+              </li>
+              <li>
+                <a
+                  href="#"
+                  title=""
+                  className="flex text-base text-white transition-all duration-200 hover:text-blue-600 focus:text-blue-600"
+                >
+                  {" "}
+                  Cron Jobs{" "}
+                </a>
+              </li>
+              <li>
+                <a
+                  href="#"
+                  title=""
+                  className="flex text-base text-white transition-all duration-200 hover:text-blue-600 focus:text-blue-600"
+                >
+                  {" "}
+                  PostgreSQL{" "}
+                </a>
+              </li>
+              <li>
+                <a
+                  href="#"
+                  title=""
+                  className="flex text-base text-white transition-all duration-200 hover:text-blue-600 focus:text-blue-600"
+                >
+                  {" "}
+                  Redis®{" "}
+                </a>
+              </li>
+            </ul>
+          </div>
+
+          <div>
+            <p className="text-sm font-semibold tracking-widest text-emerald-500 uppercase">
+            COMPANY
             </p>
 
             <ul className="mt-6 space-y-4">
@@ -112,7 +296,7 @@ const ComponentName = () => {
                   className="flex text-base text-white transition-all duration-200 hover:text-blue-600 focus:text-blue-600"
                 >
                   {" "}
-                  Features{" "}
+                  Pricing{" "}
                 </a>
               </li>
 
@@ -123,7 +307,7 @@ const ComponentName = () => {
                   className="flex text-base text-white transition-all duration-200 hover:text-blue-600 focus:text-blue-600"
                 >
                   {" "}
-                  Works{" "}
+                  Docs{" "}
                 </a>
               </li>
 
@@ -134,18 +318,9 @@ const ComponentName = () => {
                   className="flex text-base text-white transition-all duration-200 hover:text-blue-600 focus:text-blue-600"
                 >
                   {" "}
-                  Career{" "}
+                  Changelog{" "}
                 </a>
               </li>
-            </ul>
-          </div>
-
-          <div>
-            <p className="text-sm font-semibold tracking-widest text-emerald-500 uppercase">
-              Help
-            </p>
-
-            <ul className="mt-6 space-y-4">
               <li>
                 <a
                   href="#"
@@ -153,10 +328,9 @@ const ComponentName = () => {
                   className="flex text-base text-white transition-all duration-200 hover:text-blue-600 focus:text-blue-600"
                 >
                   {" "}
-                  Customer Support{" "}
+                  Blog{" "}
                 </a>
               </li>
-
               <li>
                 <a
                   href="#"
@@ -164,21 +338,9 @@ const ComponentName = () => {
                   className="flex text-base text-white transition-all duration-200 hover:text-blue-600 focus:text-blue-600"
                 >
                   {" "}
-                  Delivery Details{" "}
+                  Careers{" "}
                 </a>
               </li>
-
-              <li>
-                <a
-                  href="#"
-                  title=""
-                  className="flex text-base text-white transition-all duration-200 hover:text-blue-600 focus:text-blue-600"
-                >
-                  {" "}
-                  Terms & Conditions{" "}
-                </a>
-              </li>
-
               <li>
                 <a
                   href="#"
@@ -189,15 +351,45 @@ const ComponentName = () => {
                   Privacy Policy{" "}
                 </a>
               </li>
+              <li>
+                <a
+                  href="#"
+                  title=""
+                  className="flex text-base text-white transition-all duration-200 hover:text-blue-600 focus:text-blue-600"
+                >
+                  {" "}
+                  Security{" "}
+                </a>
+              </li>
+              <li>
+                <a
+                  href="#"
+                  title=""
+                  className="flex text-base text-white transition-all duration-200 hover:text-blue-600 focus:text-blue-600"
+                >
+                  {" "}
+                  Security.txt{" "}
+                </a>
+              </li>
+              <li>
+                <a
+                  href="#"
+                  title=""
+                  className="flex text-base text-white transition-all duration-200 hover:text-blue-600 focus:text-blue-600"
+                >
+                  {" "}
+                  Terms Of Use{" "}
+                </a>
+              </li>
             </ul>
           </div>
 
-          <div className="col-span-2 md:col-span-1 lg:col-span-2 lg:pl-8">
+          {/* <div className="col-span-3 md:col-span-1 lg:col-span-2 lg:pl-8">
             <p className="text-sm font-semibold tracking-widest text-emerald-500 uppercase">
-              Subscribe to newsletter
+              Contact us
             </p>
 
-            <form action="#" method="POST" className="mt-6">
+            <div className="mt-6">
               <div>
                 <label className="sr-only">Email</label>
                 <input
@@ -212,14 +404,14 @@ const ComponentName = () => {
               <button className="text-base mt-5 shadow-[0_4px_14px_0_rgb(0,118,255,39%)] hover:shadow-[0_6px_20px_rgba(0,118,255,23%)] hover:bg-[rgba(0,118,255,0.9)] px-5 py-2 bg-[#11529d] rounded-md text-white font-light transition duration-200 ease-linear">
                 Send
               </button>
-            </form>
-          </div>
+            </div>
+          </div> */}
         </div>
 
         <hr className="mt-16 mb-10 border-gray-200" />
 
         <p className="text-sm text-center text-gray-600">
-          © Copyright 2021, All Rights Reserved by Render
+          © Copyright 2024, All Rights Reserved by Render
         </p>
       </div>
     </section>

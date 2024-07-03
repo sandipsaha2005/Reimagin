@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -6,7 +8,7 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    font-family: JetBrains Mono;
+    font-family: "JetBrains Mono", monospace;
 }
 
 html,
@@ -15,7 +17,7 @@ body {
 }
 
 ::selection {
-    color: cornflowerblue;
+    color: rgb(41, 97, 201);
 }
 
 @layer base {
