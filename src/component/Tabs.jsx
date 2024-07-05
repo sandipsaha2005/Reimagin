@@ -42,7 +42,7 @@ const Tabs = ({
             style={{
               transformStyle: "preserve-3d",
               color:'red',
-              backgroundColor:'#111',
+              backgroundColor:'transparent',
               // marginRight:'10px',
             }}
           >
@@ -79,7 +79,7 @@ const FadeInDiv = ({ className, tabs, active, hovering }) => {
     return tab.value === tabs[0].value;
   };
   return (
-    <div className="relative w-full h-full ">
+    <div className="relative w-full h-full">
       {tabs.map((tab, idx) => (
         <motion.div
           key={tab.value}

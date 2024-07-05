@@ -5,48 +5,35 @@ import { IconSquareRoundedX } from "@tabler/icons-react";
 
 const loadingStates = [
   {
-    text: "Buying a condo",
+    text: "Select Service 📝",
   },
   {
-    text: "Travelling in a flight",
+    text: "Deploy Things 🚀",
   },
   {
-    text: "Meeting Tyler Durden",
+    text: "Update Automatic 🥱",
   },
   {
-    text: "He makes soap",
-  },
-  {
-    text: "We goto a bar",
-  },
-  {
-    text: "Start a fight",
-  },
-  {
-    text: "We like it",
-  },
-  {
-    text: "Welcome to F**** C***",
+    text: "Done ✅",
   },
 ];
 
 export default function MultiStepLoaderDemo() {
   const [loading, setLoading] = useState(false);
   return (
-    <div className="w-full h-[60vh] flex items-center justify-center">
+    <div className="w-full h-fit flex items-center justify-center bg-transparent">
       {/* Core Loader Modal */}
-      <Loader loadingStates={loadingStates} loading={loading} duration={2000} />
+      <Loader loadingStates={loadingStates} loading={loading} duration={1500} />
 
-      {/* The buttons are for demo only, remove it in your actual code ⬇️ */}
       <button
         onClick={() => setLoading(true)}
-        className="bg-[#39C3EF] hover:bg-[#39C3EF]/90 text-black mx-auto text-sm md:text-base transition font-medium duration-200 h-10 rounded-lg px-8 flex items-center justify-center"
-        style={{
-          boxShadow:
-            "0px -1px 0px 0px #ffffff40 inset, 0px 1px 0px 0px #ffffff40 inset",
-        }}
+        className=" bg-gradient-to-tr to-purple-950 via-blue-700 from-blue-950 hover:bg-[#39C3EF]/90 text-white mx-auto text-sm md:text-base transition font-medium duration-200 h-10 rounded-lg px-8 flex items-center justify-center"
+        // style={{
+        //   boxShadow:
+        //     "0px -1px 0px 0px #ffffff40 inset, 0px 1px 0px 0px #ffffff40 inset",
+        // }}
       >
-        Click to load
+        Why? 👆 👆 ✅
       </button>
 
       {loading && (

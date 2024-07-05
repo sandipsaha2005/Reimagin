@@ -1,7 +1,7 @@
 import React from "react";
 import { WavyBackground } from "../ui/wavy";
-import { TabsDemo } from '../ui/UseTab';
 import logo from '../assets/render-logo.png';
+import { HoverBorderGradientDemo } from './HoverBorderGradComp'
 
 export function WavyBackgroundDemo() {
   return (
@@ -11,9 +11,12 @@ export function WavyBackgroundDemo() {
       <img className=" inline-block mb-2 h-16 invert" src={logo} alt="Render Logo" />
         .fastest path to production
       </p>
-      <p className="text-base md:text-2xl mt-4 text-white font-normal inter-var text-center">
+      <p className="text-base md:text-2xl mt-4 text-white font-normal inter-var text-center mb-4">
         Build, deploy, and scale your apps with unparalleled ease – from your first user to your billionth.
       </p>
+      <div className=" items-start">
+        <HoverBorderGradientDemo/>
+      </div>
     </WavyBackground>
   );
 }

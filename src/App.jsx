@@ -19,7 +19,7 @@ import { GridSmallBackgroundDemo } from './component/Background3'
 import { CanvasRevealEffectDemo } from './component/CardScrollComp'
 import { LampDemo } from './component/Lamp'
 import { LinkPreviewDemo } from './component/linkTextComponet'
-import { HoverBorderGradientDemo } from './component/HoverBorderGradComp'
+// import { HoverBorderGradientDemo } from './component/HoverBorderGradComp'
 import  MultiStepLoaderDemo  from './component/multiStepLoaderComp'
 import Footer from './component/Footer';
 import { BackgroundBeamsDemo } from './component/backgroundBeamsComp'
@@ -33,11 +33,14 @@ function App() {
       {/* <WobbleCardDemo/> */}
       {/* <FloatingNavDemo/> */}
       {/* <WobbleCardDemo/> */}
+      {/* <HoverBorderGradientDemo/> */}
+      {/* <BackgroundBeamsDemo/> */}
 
       {/* Header  */}
       <NavbarDemo/>
       <WavyBackgroundDemo />
       <TabsDemo />
+      <MultiStepLoaderDemo/>
       <InfiniteMovingCardsDemo/>
       {/* mid1 */}
       <GridBackgroundDemo/>
@@ -56,9 +59,6 @@ function App() {
       <CanvasRevealEffectDemo/>
       <LampDemo/>
       <Footer/>
-      <HoverBorderGradientDemo/>
-      <MultiStepLoaderDemo/>
-      <BackgroundBeamsDemo/>
 
     </div>
   );

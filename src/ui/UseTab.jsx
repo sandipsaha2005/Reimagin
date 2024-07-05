@@ -44,15 +44,15 @@ export function TabsDemo() {
   ];
 
   return (
-    <>
-     <p className=" text-neutral-600 text-center text-6xl mt-10 font-bold">
+    <div className="bg-gradient-to-b from-black via-[#0e0b0b] to-[#111]">
+     <p className=" text-neutral-600 text-center text-6xl font-bold mb-5">
           <TypewriterEffectSmoothDemo/>
          {/* <span  className="text-purple-900">Click,</span><span className="text-red-900">click,</span><span className="text-blue-900">done.</span> */}
       </p>
     <div className="h-[20rem] md:h-[40rem] [perspective:1000px] relative b flex flex-col max-w-3xl mx-auto w-full items-start justify-start mt-2 mb-40">
       <Tabs tabs={tabs} />
     </div>
-    </>
+    </div>
   );
 }
 

@@ -27,7 +27,7 @@ export function HoverBorderGradient({
   containerClassName,
   className,
   as: Tag = "button",
-  duration = 1,
+  duration = 0.5,
   clockwise = true,
   ...props
 }) {
@@ -48,7 +48,7 @@ export function HoverBorderGradient({
       onMouseEnter={() => setHovered(true)}
       onMouseLeave={() => setHovered(false)}
       className={cn(
-        "relative flex rounded-full border content-center bg-black/20 hover:bg-black/10 transition duration-500 dark:bg-white/20 items-center flex-col flex-nowrap gap-10 h-min justify-center overflow-visible p-px decoration-clone w-fit",
+        "relative flex rounded-full border content-center bg-black/20 hover:bg-black/10 transition duration-500 dark:bg-white/20 items-center flex-col flex-nowrap gap-10 h-min justify-center overflow-visible p-2", // Increase p-2 for a thicker border
         containerClassName
       )}
       {...props}
@@ -79,7 +79,7 @@ export function HoverBorderGradient({
         }}
         transition={{ ease: "linear", duration: duration }}
       />
-      <div className="bg-black absolute z-1 flex-none inset-[2px] rounded-[100px]" />
+      <div className="bg-black absolute z-1 flex-none inset-[3px] rounded-[100px]" /> {/* Increase inset-[5px] for a thicker border */}
     </Tag>
   );
 }

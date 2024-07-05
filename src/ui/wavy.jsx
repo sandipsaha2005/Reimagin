@@ -24,7 +24,7 @@ export const WavyBackground = ({
       case "slow":
         return 0.001;
       case "fast":
-        return 0.002;
+        return 0.003;
       default:
         return 0.001;
     }
@@ -44,13 +44,15 @@ export const WavyBackground = ({
     };
     render();
   };
+<div className="bg-emerald-600">
 
+</div>
   const waveColors = colors ?? [
-    "#38bdf8",
-    "#818cf8",
-    "#c084fc",
-    "#e879f9",
-    "#22d3ee",
+    "#1e3a8a", // Deep blue
+    "#581c87", // Deep purple
+    "#7f1d1d", // Deep Red
+    '#059669',//Deep emrald
+  
   ];
 
   const drawWave = (n) => {
@@ -70,7 +72,7 @@ export const WavyBackground = ({
 
   let animationId;
   const render = () => {
-    ctx.fillStyle = backgroundFill || "#111";
+    ctx.fillStyle = backgroundFill || "black";
     ctx.globalAlpha = waveOpacity || 0.5;
     ctx.fillRect(0, 0, w, h);
     drawWave(5);
