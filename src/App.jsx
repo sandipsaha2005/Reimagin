@@ -33,6 +33,7 @@ function App() {
       {/* <WobbleCardDemo/> */}
       {/* <FloatingNavDemo/> */}
       {/* <WobbleCardDemo/> */}
+      {/* <Company /> */}
       {/* <HoverBorderGradientDemo/> */}
       {/* <BackgroundBeamsDemo/> */}
 
@@ -54,8 +55,6 @@ function App() {
       {/* Footer */}
       <AnimatedPinDemo/>
       <LinkPreviewDemo/>
-      {/* <Company /> */}
-
       <CanvasRevealEffectDemo/>
       <LampDemo/>
       <Footer/>

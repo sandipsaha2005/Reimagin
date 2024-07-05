@@ -1,10 +1,17 @@
 import React, { useState } from "react";
 import { HoveredLink, Menu, MenuItem, ProductItem } from "../ui/FixedNav";
 import { cn } from "../utils/cn";
+// PRICING
 import IndivisualPricing from "../assets/IndivisualPricing.png";
 import TeamPricing from "../assets/TeamPricing.png";
 import EnterprisePricing from "../assets/EnterprisePricing.png";
 import OrganizationPricing from "../assets/OrganizationPricing.png";
+// OTHERS
+import About from "../assets/about.png";
+import Doc from "../assets/doc.png";
+import Careers from "../assets/Careers.png";
+import Changelog from "../assets/changelog.png";
+import Blog from "../assets/blog.png";
 
 export function NavbarDemo() {
   return (
@@ -26,7 +33,9 @@ function Navbar({ className }) {
             <div className="flex flex-col space-y-4 text-sm">
               <p className=" font-bold text-lg text-green-400">FEATURES</p>
               <HoveredLink to="/web-dev">Autoscaling</HoveredLink>
-              <HoveredLink to="/interface-design">Private Networking</HoveredLink>
+              <HoveredLink to="/interface-design">
+                Private Networking
+              </HoveredLink>
               <HoveredLink to="/seo">Managed PostgreSQL</HoveredLink>
               <HoveredLink to="/branding">Maganed Redis</HoveredLink>
               <HoveredLink to="/branding">Presistent Disks</HoveredLink>
@@ -58,7 +67,6 @@ function Navbar({ className }) {
               <HoveredLink to="/branding">PHP</HoveredLink>
             </div>
           </div>
-          
         </MenuItem>
         <MenuItem setActive={setActive} active={active} item="PRICING">
           <div className="text-sm grid grid-cols-2 gap-10 p-4">
@@ -89,13 +97,47 @@ function Navbar({ className }) {
           </div>
         </MenuItem>
         <MenuItem setActive={setActive} active={active} item="OTHERS">
+          <div className="text-sm grid grid-cols-2 gap-10 p-4">
+            <ProductItem
+              title="CAREERES"
+              // href="https://algochurn.com"
+              src={Careers}
+              description="Bring Your Expertise to Render"
+            />
+            <ProductItem
+              title="CHANGLOG"
+              // href="https://tailwindmasterkit.com"
+              src={Changelog}
+              description="New Plans"
+            />
+            <ProductItem
+              title="ABOUT"
+              // href="https://gomoonbeam.com"
+              src={About}
+              description="We build accessible and reliable cloud infrastructure."
+            />
+            <ProductItem
+              title="DOCS"
+              // href="https://userogue.com"
+              src={Doc}
+              description="Render Quickstarts Deploy your code in just a few clicks."
+            />
+             <ProductItem
+              title="BLOG"
+              // href="https://userogue.com"
+              src={Blog}
+              description="Interesting & Knowlagble Blog"
+            />
+          </div>
+        </MenuItem>
+        {/* <MenuItem setActive={setActive} active={active} item="OTHERS">
           <div className="flex flex-col space-y-4 text-sm">
             <HoveredLink to="/CAREERES">CAREERES</HoveredLink>
             <HoveredLink to="/CHANGLOG">CHANGLOG</HoveredLink>
             <HoveredLink to="/BLOG">BLOG</HoveredLink>
             <HoveredLink to="/DOCS">DOCS</HoveredLink>
           </div>
-        </MenuItem>
+        </MenuItem> */}
       </Menu>
     </div>
   );
