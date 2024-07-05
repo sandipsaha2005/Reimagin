@@ -19,7 +19,10 @@ import { GridSmallBackgroundDemo } from './component/Background3'
 import { CanvasRevealEffectDemo } from './component/CardScrollComp'
 import { LampDemo } from './component/Lamp'
 import { LinkPreviewDemo } from './component/linkTextComponet'
+import { HoverBorderGradientDemo } from './component/HoverBorderGradComp'
+import  MultiStepLoaderDemo  from './component/multiStepLoaderComp'
 import Footer from './component/Footer';
+import { BackgroundBeamsDemo } from './component/backgroundBeamsComp'
 function App() {
   
   return (
@@ -53,6 +56,10 @@ function App() {
       <CanvasRevealEffectDemo/>
       <LampDemo/>
       <Footer/>
+      <HoverBorderGradientDemo/>
+      <MultiStepLoaderDemo/>
+      <BackgroundBeamsDemo/>
+
     </div>
   );
 }
