@@ -23,6 +23,7 @@ import { LinkPreviewDemo } from './component/linkTextComponet'
 import  MultiStepLoaderDemo  from './component/multiStepLoaderComp'
 import Footer from './component/Footer';
 import { BackgroundBeamsDemo } from './component/backgroundBeamsComp'
+import { AnimatedSubscribeButtonDemo } from './component/magicUiAnimatedButton'
 function App() {
   
   return (
@@ -58,6 +59,8 @@ function App() {
       <CanvasRevealEffectDemo/>
       <LampDemo/>
       <Footer/>
+      <AnimatedSubscribeButtonDemo/>
+      
 
     </div>
   );

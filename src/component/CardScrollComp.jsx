@@ -1,22 +1,78 @@
 "use client";
-import React, { useState } from "react";
+import React, { useState,useEffect } from "react";
 import { AnimatePresence, motion } from "framer-motion";
 import { CanvasRevealEffect } from "../ui/CardScroll";
 import { FaUsers } from "react-icons/fa";
 import { FaCodePullRequest } from "react-icons/fa6";
 import { GrDeploy } from "react-icons/gr";
-
+import  NumberTickerDemo from './countNumberComp'
 export function CanvasRevealEffectDemo() {
+  const [number, setNumber] = useState(0);
+  const [number1, setNumber1]=useState(0)
+  const [number2, setNumber2]=useState(0)
+
+  const [intervalId, setIntervalId] = useState(null); // State to hold interval ID
+
+  const forFirst = () => {
+    if (number >= 10) return;
+    console.log("hi");
+    const id = setInterval(() => {
+      setNumber(prevNumber => prevNumber + 1);
+    }, 200); // Change number every 200 milliseconds
+
+    setIntervalId(id); // Save interval ID
+  };
+
+  const handleHover = () => {
+    if (!intervalId) { // Only start interval if it's not already running
+      forFirst();
+    }
+  };
+
+  const handleMouseLeave = () => {
+    clearInterval(intervalId); // Clear interval on mouse leave
+    setIntervalId(null); // Reset interval ID
+  };
+
+  // useEffect(() => {
+
+
+  useEffect(() => {
+    if (number1 >= 1000) return;
+
+    const interval = setInterval(() => {
+      setNumber1(prevNumber => prevNumber + 1);
+    }, 200); // Change number every second
+
+    return () => clearInterval(interval);
+  }, [number1]);
+
+  useEffect(() => {
+
+    if (number2 >= 100) return;
+
+    const interval = setInterval(() => {
+      setNumber2(prevNumber => prevNumber + 1);
+    }, 200); // Change number every second
+
+    return () => clearInterval(interval);
+  }, [number2]);
+
+
   return (
     <>
       <div className="py-20 flex flex-col lg:flex-row items-center justify-center bg-gradient-to-b from-[#111] via-zinc-800 to-[#020617] w-full gap-3 mx-auto px-8">
-        <Card title="1M+ Live Services" icon={<FaUsers className="text-8xl font-bold text-white"/>}>
+        <Card title={`${ number}  Live Services`} onMouseEnter={handleHover}
+      onMouseLeave={handleMouseLeave} icon={<FaUsers className="text-8xl font-bold text-white"/>}>
+        
           <CanvasRevealEffect
             animationSpeed={5.1}
             containerClassName="bg-purple-900"
+            
           />
+          
         </Card>
-        <Card title="40B+ Request Per Months" icon={<FaCodePullRequest  className="text-8xl font-bold text-white"/>}>
+        <Card title={`${number1} Request Per Months`} icon={<FaCodePullRequest  className="text-8xl font-bold text-white"/>}>
           <CanvasRevealEffect
             animationSpeed={5.1}
             containerClassName="bg-red-800"
@@ -24,7 +80,7 @@ export function CanvasRevealEffectDemo() {
           {/* Radial gradient for the cute fade */}
           <div className="absolute inset-0 [mask-image:radial-gradient(400px_at_center,white,transparent)] bg-black/50 dark:bg-black/90" />
         </Card>
-        <Card title="40M+ Deploys" icon={<GrDeploy className="text-8xl font-bold text-white"/>}>
+        <Card title={`${number2} Deploys`} icon={<GrDeploy className="text-8xl font-bold text-white"/>}>
           <CanvasRevealEffect
              animationSpeed={5.1}
             containerClassName="bg-blue-900"
@@ -43,6 +99,7 @@ const Card = ({ title, icon, children }) => {
       onMouseLeave={() => setHovered(false)}
       className="border border-black/[0.2] group/canvas-card flex items-center justify-center dark:border-white/[0.2]  max-w-sm w-full mx-auto p-4 h-[30rem] relative"
     >
+      {/* <NumberTickerDemo/> */}
       <Icon className="absolute h-6 w-6 -top-3 -left-3 dark:text-white text-black" />
       <Icon className="absolute h-6 w-6 -bottom-3 -left-3 dark:text-white text-black" />
       <Icon className="absolute h-6 w-6 -top-3 -right-3 dark:text-white text-black" />
