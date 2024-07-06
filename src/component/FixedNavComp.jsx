@@ -30,7 +30,7 @@ function Navbar({ className }) {
       <Menu setActive={setActive}>
         <MenuItem setActive={setActive} active={active} item="PRODUCTS">
           <div className="flex gap-3">
-            <div className="flex flex-col space-y-4 text-sm">
+            <div className="md:flex md:flex-col md:space-y-4 md:text-sm flex flex-col text-xs">
               <p className=" font-bold text-lg text-green-400">FEATURES</p>
               <HoveredLink to="/web-dev">Autoscaling</HoveredLink>
               <HoveredLink to="/interface-design">
@@ -69,7 +69,7 @@ function Navbar({ className }) {
           </div>
         </MenuItem>
         <MenuItem setActive={setActive} active={active} item="PRICING">
-          <div className="text-sm grid grid-cols-2 gap-10 p-4">
+          <div className="text-sm grid md:grid-cols-2 gap-5 p-1">
             <ProductItem
               title="Indivisual"
               // href="https://algochurn.com"
@@ -97,7 +97,7 @@ function Navbar({ className }) {
           </div>
         </MenuItem>
         <MenuItem setActive={setActive} active={active} item="OTHERS">
-          <div className="text-sm grid grid-cols-2 gap-10 p-4">
+          <div className="w-fit text-sm grid md:grid-cols-2 gap-5 p-1 pr-48">
             <ProductItem
               title="CAREERES"
               // href="https://algochurn.com"
