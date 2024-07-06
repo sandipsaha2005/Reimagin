@@ -3,9 +3,9 @@ const ComponentName = () => {
   return (
     <section className="py-10 bg-[#030616] text-white sm:pt-16 lg:pt-24">
       <div className="px-4 mx-auto sm:px-6 lg:px-8 max-w-7xl">
-        <div className="grid grid-cols-3 md:col-span-3 lg:grid-cols-6 gap-y-14 gap-x-12">
-          <div className="col-span-2 md:col-span-3 lg:col-span-2 lg:pr-8">
-            <img className="w-auto h-9 invert" src={logo} alt="" />
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-y-14 gap-x-12">
+          <div className="col-span-1 md:col-span-2 lg:col-span-1 lg:pr-8">
+            <img className="w-auto h-9 invert mx-auto md:mx-0" src={logo} alt="Render Logo" />
 
             <p className="text-base leading-relaxed text-zinc-500 mt-7">
               DEPLOY ANYTHING, ANYTIME!

@@ -5,10 +5,10 @@ import { HoverBorderGradientDemo } from './HoverBorderGradComp'
 
 export function WavyBackgroundDemo() {
   return (
-    <WavyBackground className="max-w-4xl mx-auto pb-40">
+    <WavyBackground className="px-4 md:max-w-4xl md:mx-auto">
       
       <p className="text-2xl md:text-4xl lg:text-7xl text-white font-bold inter-var text-center items-center align-middle">
-      <img className=" inline-block mb-2 h-16 invert" src={logo} alt="Render Logo" />
+      <img className=" inline-block mb-2 md:h-16 h-5 invert" src={logo} alt="Render Logo" />
         .fastest path to production
       </p>
       <p className="text-base md:text-2xl mt-4 text-white font-normal inter-var text-center mb-4">

@@ -22,7 +22,7 @@ export function CanvasRevealEffectDemo() {
         }
         return newNumber;
       });
-    }, 200);
+    }, 100);
     setIntervalId(id);
   };
 
@@ -55,7 +55,7 @@ export function CanvasRevealEffectDemo() {
     <div className="py-20 flex flex-col lg:flex-row items-center justify-center bg-gradient-to-b from-[#111] via-zinc-800 to-[#020617] w-full gap-3 mx-auto px-8">
       <Card
         title={`${number} Live Services`}
-        onMouseEnter={() => handleHover(setNumber, number, 1000000, 100000)}
+        onMouseEnter={() => handleHover(setNumber, number, 1000000, 50000)}
         onMouseLeave={handleMouseLeave}
         icon={<FaUsers className="text-8xl font-bold text-white" />}
       >
@@ -72,7 +72,7 @@ export function CanvasRevealEffectDemo() {
       </Card>
       <Card
         title={`${number2} Deploys`}
-        onMouseEnter={() => handleHover(setNumber2, number2, 40000000, 100000)}
+        onMouseEnter={() => handleHover(setNumber2, number2, 40000000, 1000000)}
         onMouseLeave={handleMouseLeave}
         icon={<GrDeploy className="text-8xl font-bold text-white" />}
       >

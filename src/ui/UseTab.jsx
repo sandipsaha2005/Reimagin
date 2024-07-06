@@ -44,12 +44,12 @@ export function TabsDemo() {
   ];
 
   return (
-    <div className="bg-gradient-to-b from-black via-[#0e0b0b] to-[#111]">
+    <div className="bg-gradient-to-b from-black via-[black] to-[#111]">
      <p className=" text-neutral-600 text-center text-6xl font-bold mb-5">
           <TypewriterEffectSmoothDemo/>
          {/* <span  className="text-purple-900">Click,</span><span className="text-red-900">click,</span><span className="text-blue-900">done.</span> */}
       </p>
-    <div className="h-[20rem] md:h-[40rem] [perspective:1000px] relative b flex flex-col max-w-3xl mx-auto w-full items-start justify-start mt-2 mb-40">
+    <div className="h-[42rem] md:h-[40rem] [perspective:1000px] relative b flex flex-col max-w-3xl px-5 mx-auto w-full items-start justify-start md:mb-20">
       <Tabs tabs={tabs} />
     </div>
     </div>
@@ -59,7 +59,6 @@ export function TabsDemo() {
 const ServiceContent = () => {
   return (
       <ServiceCard/>
-      // <ThreeDCardDemo/>
   );
 };
 const DeployContent = () => {

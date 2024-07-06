@@ -17,7 +17,7 @@ body {
 }
 
 ::selection {
-    color: rgb(41, 97, 201);
+    color: rgb(25, 77, 173);
 }
 
 @layer base {

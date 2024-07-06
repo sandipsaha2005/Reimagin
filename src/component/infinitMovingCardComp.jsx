@@ -45,11 +45,11 @@ export function InfiniteMovingCardsDemo() {
 
   return (
     <div className="h-[40rem] rounded-md flex flex-col antialiased bg-gradient-to-b from-[#111] to-black  items-center justify-center relative overflow-hidden">
-      <p className="text-6xl font-bold bg-gradient-to-l from-purple-900 via-red-900 to-blue-900 text-transparent bg-clip-text mb-20">Whatever your stack, it runs on Render.</p>
+      <p className="px-4 text-3xl md:text-6xl font-bold bg-gradient-to-l from-purple-700 via-red-700 to-blue-700 text-transparent bg-clip-text mb-20">Whatever your stack, it runs on Render.</p>
       <InfiniteMovingCards
         items={testimonials}
         direction="right"
-        speed="normal"
+        speed="slow"
       />
     </div>
   );

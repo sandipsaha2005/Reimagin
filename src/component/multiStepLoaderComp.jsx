@@ -1,4 +1,3 @@
-"use client";
 import React, { useState } from "react";
 import { MultiStepLoader as Loader } from "../ui/multiStepLoader";
 import { IconSquareRoundedX } from "@tabler/icons-react";
@@ -20,25 +19,22 @@ const loadingStates = [
 
 export default function MultiStepLoaderDemo() {
   const [loading, setLoading] = useState(false);
+
   return (
-    <div className="w-full h-fit flex items-center justify-center bg-transparent">
+    <div className="mt-20 md:mt-3 bg-transparent flex items-center justify-center">
       {/* Core Loader Modal */}
       <Loader loadingStates={loadingStates} loading={loading} duration={1500} />
 
       <button
         onClick={() => setLoading(true)}
-        className=" bg-gradient-to-tr to-purple-950 via-blue-700 from-blue-950 hover:bg-[#39C3EF]/90 text-white mx-auto text-sm md:text-base transition font-medium duration-200 h-10 rounded-lg px-8 flex items-center justify-center"
-        // style={{
-        //   boxShadow:
-        //     "0px -1px 0px 0px #ffffff40 inset, 0px 1px 0px 0px #ffffff40 inset",
-        // }}
+        className="bg-gradient-to-r from-red-700 via-red-950 to-black hover:bg-gradient-to-r hover:from-black hover:via-red-950 hover:to-red-700 text-white mx-auto text-base font-medium duration-1000 h-12 rounded-lg px-8 flex items-center justify-center shadow-lg focus:outline-none"
       >
-        Why? 👆 👆 ✅
+        <span className="animate-pulse mr-2">Don't Think just click</span>
       </button>
 
       {loading && (
         <button
-          className="fixed top-4 right-4 text-black dark:text-white z-[120]"
+          className="fixed top-4 right-4 text-white z-[120] bg-gray-800 bg-opacity-75 hover:bg-opacity-100 rounded-full p-2 focus:outline-none"
           onClick={() => setLoading(false)}
         >
           <IconSquareRoundedX className="h-10 w-10" />

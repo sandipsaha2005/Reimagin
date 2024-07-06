@@ -86,8 +86,9 @@ export const InfiniteMovingCards = ({
             <img
               src={item.image}
               alt={item.name}
-              height={80}
-              width={80}
+              // height={80}
+              // width={80}
+              className="h-16 w-16 md:h-20 md:w-20 filter grayscale transition duration-700 ease-in-out transform hover:filter-none hover:scale-125"
             />
           </li>
         ))}
