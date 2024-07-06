@@ -1,7 +1,7 @@
 "use client";
 import React from "react";
 import { BackgroundBeams } from "../ui/backGroundBeams";
-
+import { AnimatedSubscribeButtonDemo } from './magicUiAnimatedButton'
 export function BackgroundBeamsDemo() {
   return (
     <div className="h-[40rem] w-full rounded-md bg-neutral-950 relative flex flex-col items-center justify-center antialiased">
@@ -22,6 +22,7 @@ export function BackgroundBeamsDemo() {
         />
       </div>
       <BackgroundBeams className="z-0" />
+      <AnimatedSubscribeButtonDemo/>
     </div>
   );
 }

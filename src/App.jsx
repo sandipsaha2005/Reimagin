@@ -36,7 +36,6 @@ function App() {
       {/* <WobbleCardDemo/> */}
       {/* <Company /> */}
       {/* <HoverBorderGradientDemo/> */}
-      {/* <BackgroundBeamsDemo/> */}
 
       {/* Header  */}
       <NavbarDemo/>
@@ -59,7 +58,8 @@ function App() {
       <CanvasRevealEffectDemo/>
       <LampDemo/>
       <Footer/>
-      <AnimatedSubscribeButtonDemo/>
+      {/* <AnimatedSubscribeButtonDemo/> */}
+      {/* <BackgroundBeamsDemo/> */}
       
 
     </div>

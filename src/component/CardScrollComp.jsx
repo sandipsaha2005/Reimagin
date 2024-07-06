@@ -1,15 +1,15 @@
-"use client";
-import React, { useState,useEffect } from "react";
+import React, { useState, useEffect, useRef } from "react";
 import { AnimatePresence, motion } from "framer-motion";
 import { CanvasRevealEffect } from "../ui/CardScroll";
 import { FaUsers } from "react-icons/fa";
 import { FaCodePullRequest } from "react-icons/fa6";
 import { GrDeploy } from "react-icons/gr";
-import  NumberTickerDemo from './countNumberComp'
+import NumberTickerDemo from "./countNumberComp";
+
 export function CanvasRevealEffectDemo() {
   const [number, setNumber] = useState(0);
-  const [number1, setNumber1]=useState(0)
-  const [number2, setNumber2]=useState(0)
+  const [number1, setNumber1] = useState(0);
+  const [number2, setNumber2] = useState(0);
 
   const [intervalId, setIntervalId] = useState(null); // State to hold interval ID
 
@@ -18,7 +18,7 @@ export function CanvasRevealEffectDemo() {
     console.log("hi");
     const id = setInterval(() => {
       setNumber(prevNumber => prevNumber + 1);
-    }, 200); // Change number every 200 milliseconds
+    }, 1); // Change number every 200 milliseconds
 
     setIntervalId(id); // Save interval ID
   };
@@ -34,25 +34,50 @@ export function CanvasRevealEffectDemo() {
     setIntervalId(null); // Reset interval ID
   };
 
-  // useEffect(() => {
-
 
   useEffect(() => {
-    if (number1 >= 1000) return;
+    if (number >= 1000000) {
+      setNumber("1M+");
+      return;
+    }
+    if (number === "1M+") {
+      // setNumber(1);
+      return;
+    }
 
     const interval = setInterval(() => {
-      setNumber1(prevNumber => prevNumber + 1);
+      setNumber(prevNumber => prevNumber + 100000);
+    }, 200); // Change number every second
+    return () => clearInterval(interval);
+  }, [number]);
+
+  useEffect(() => {
+    if (number1 >= 40000000000) {
+      setNumber1("4B+");
+      return;
+    }
+    if (number1 === "4B+") {
+      // setNumber(1);
+      return;
+    }
+
+    const interval = setInterval(() => {
+      setNumber1(prevNumber => prevNumber + 1000000000);
     }, 200); // Change number every second
 
     return () => clearInterval(interval);
   }, [number1]);
 
   useEffect(() => {
-
-    if (number2 >= 100) return;
-
+    if (number2 >= 40000000) {
+      setNumber2("40M+");
+      return;
+    }
+    if (number2 === "40M+") {
+      return;
+    }
     const interval = setInterval(() => {
-      setNumber2(prevNumber => prevNumber + 1);
+      setNumber2(prevNumber => prevNumber + 100000);
     }, 200); // Change number every second
 
     return () => clearInterval(interval);
@@ -62,8 +87,8 @@ export function CanvasRevealEffectDemo() {
   return (
     <>
       <div className="py-20 flex flex-col lg:flex-row items-center justify-center bg-gradient-to-b from-[#111] via-zinc-800 to-[#020617] w-full gap-3 mx-auto px-8">
-        <Card title={`${ number}  Live Services`} onMouseEnter={handleHover}
-      onMouseLeave={handleMouseLeave} icon={<FaUsers className="text-8xl font-bold text-white"/>}>
+        <Card title={`${number}  Live Services`} onStartHover={handleHover}
+      onStopHover={handleMouseLeave} icon={<FaUsers className="text-8xl font-bold text-white"/>}>
         
           <CanvasRevealEffect
             animationSpeed={5.1}
