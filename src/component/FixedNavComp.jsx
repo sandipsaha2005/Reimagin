@@ -97,7 +97,7 @@ function Navbar({ className }) {
           </div>
         </MenuItem>
         <MenuItem setActive={setActive} active={active} item="OTHERS">
-          <div className="w-fit text-sm grid md:grid-cols-2 gap-5 p-1 pr-48">
+          <div className="w-fit text-sm grid md:grid-cols-2 gap-5 p-1">
             <ProductItem
               title="CAREERES"
               // href="https://algochurn.com"
