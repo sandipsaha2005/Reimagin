@@ -6,8 +6,8 @@ import IndivisualPricing from "../assets/IndivisualPricing.png";
 import TeamPricing from "../assets/TeamPricing.png";
 import EnterprisePricing from "../assets/EnterprisePricing.png";
 import OrganizationPricing from "../assets/OrganizationPricing.png";
-import { styled } from '@mui/system';
-import Slide from '@mui/material/Slide';
+import { styled } from "@mui/system";
+import Slide from "@mui/material/Slide";
 // OTHERS
 import About from "../assets/about.png";
 import Doc from "../assets/doc.png";
@@ -16,7 +16,7 @@ import Changelog from "../assets/changelog.png";
 import Blog from "../assets/blog.png";
 import { AiOutlineMenu } from "react-icons/ai"; // Import the menu icon from react-icons
 import Drawer from "@mui/material/Drawer";
-import CloseIcon from '@mui/icons-material/Close';
+import CloseIcon from "@mui/icons-material/Close";
 import LinkPreview from "../ui/LinkTest";
 import {
   Box,
@@ -34,11 +34,11 @@ import ListItemText from "@mui/material/ListItemText";
 import { IconButton } from "@mui/material";
 import { color } from "framer-motion";
 import { Button } from "../ui/movingBorderButton";
-import Render from '../assets/render-logo.png'
+import Render from "../assets/render-logo.png";
 import { render } from "@react-three/fiber";
 const StyledDrawer = styled(Drawer)(({ theme }) => ({
-  '& .MuiDrawer-paper': {
-    transition: 'transform 1s ',
+  "& .MuiDrawer-paper": {
+    transition: "transform 1s ",
   },
 }));
 export function NavbarDemo() {
@@ -71,27 +71,47 @@ function Navbar({ className }) {
         color: "white",
         height: "100vh",
         // opacity: 0.5,
-        paddingTop: '5%',
+        paddingTop: "5%",
       }}
       role="presentation"
       onClick={toggleDrawer(false)}
     >
-      <Box sx={{ display: 'flex', justifyContent: 'space-between', paddingLeft: 5, paddingRight: 5, paddingBottom: 3 }}>
+      <Box
+        sx={{
+          display: "flex",
+          justifyContent: "space-between",
+          paddingLeft: 5,
+          paddingRight: 5,
+          paddingBottom: 3,
+        }}
+      >
         <p style={{ fontSize: 30 }}>Welcome </p>
         <IconButton onClick={toggleDrawer(false)}>
           <CloseIcon size={24} style={{ fill: "white" }} />
         </IconButton>
       </Box>
-      <Divider style={{ backgroundColor: 'white' }} />
-      <List sx={{ paddingTop: 7, display: 'flex', flexDirection: 'column', gap: 2 }}>
-        {['Product', 'Pricing', 'Others'].map((text, index) => (
+      <Divider style={{ backgroundColor: "white" }} />
+      <List
+        sx={{ paddingTop: 7, display: "flex", flexDirection: "column", gap: 2 }}
+      >
+        {["Product", "Pricing", "Others"].map((text, index) => (
           <ListItem key={text} disablePadding>
             <ListItemButton>
               <ListItemIcon>
                 {index % 2 === 0 ? <InboxIcon /> : <MailIcon />}
               </ListItemIcon>
               <LinkPreview url="https://equals.com/" className="font-bold">
-              <p style={{ fontSize: 25, fontWeight: 300, position: 'fixed', left: '20px', color: '#9a9c9a' }}>{text}</p>
+                <p
+                  style={{
+                    fontSize: 25,
+                    fontWeight: 300,
+                    position: "fixed",
+                    left: "20px",
+                    color: "#9a9c9a",
+                  }}
+                >
+                  {text}
+                </p>
               </LinkPreview>
             </ListItemButton>
           </ListItem>
@@ -117,9 +137,7 @@ function Navbar({ className }) {
         // TransitionComponent={(props) => (
         //   <Slide {...props} direction="left" timeout={500} />
         // )}
-        
       >
- 
         {DrawerList}
       </Drawer>
 

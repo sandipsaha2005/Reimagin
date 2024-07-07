@@ -2,6 +2,7 @@
 import React from "react";
 import { StickyScroll1 } from "../ui/StickyScroll1";
 // import Image from "next/image";
+import { FaRocket } from 'react-icons/fa';
 
 const content = [
   {
@@ -31,7 +32,7 @@ const content = [
         height={300}
         width={350}
         alt="image not found" 
-        className=" object-cover"
+        className="object-cover"
         />
       </div>
     ),

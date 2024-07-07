@@ -1,13 +1,9 @@
-
 import React, { useEffect, useRef, useState } from "react";
 import { useMotionValueEvent, useScroll } from "framer-motion";
 import { motion } from "framer-motion";
 import { cn } from "../utils/cn";
 
-export const StickyScroll2 = ({
-  content,
-  contentClassName,
-}) => {
+export const StickyScroll2 = ({ content, contentClassName }) => {
   const [activeCard, setActiveCard] = React.useState(0);
   const ref = useRef(null);
   const { scrollYProgress } = useScroll({
@@ -32,13 +28,8 @@ export const StickyScroll2 = ({
     );
     setActiveCard(closestBreakpointIndex);
   });
-  const backgroundColors = [
-    "#1d4ed8 ", 
-    "#1e40af", 
-    '#1e3a8a',
-    "#172554 ",
-  ];
-  
+  const backgroundColors = ["#1d4ed8 ", "#1e40af", "#1e3a8a", "#172554 "];
+
   const linearGradients = [
     "linear-gradient(to bottom right, var(--cyan-500), var(--emerald-500))",
     "linear-gradient(to bottom right, var(--pink-500), var(--indigo-500))",
@@ -56,7 +47,8 @@ export const StickyScroll2 = ({
   return (
     <motion.div
       animate={{
-        backgroundColor: backgroundColors[activeCard % backgroundColors.reverse().length],
+        backgroundColor:
+          backgroundColors[activeCard % backgroundColors.reverse().length],
       }}
       className="h-[30rem] overflow-y-auto flex justify-center relative space-x-10 rounded-md p-10 bg-purple-"
       ref={ref}
@@ -74,6 +66,9 @@ export const StickyScroll2 = ({
                 }}
                 className="text-2xl font-bold text-slate-100"
               >
+                <div className="md:hidden h-20 w-20 mb-5 rounded-md overflow-hidden">
+                  {item.content}
+                </div>
                 {item.title}
               </motion.h2>
               <motion.p
