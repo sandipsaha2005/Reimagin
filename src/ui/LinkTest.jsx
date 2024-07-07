@@ -119,7 +119,7 @@ const LinkPreview = ({
                     style={{ borderRadius: "0.5rem" }}
                     alt="preview"
                   />
-                  <img
+                  {/* <img
                     src={isStatic ? imageSrc : src}
                     width={width}
                     height={height}
@@ -132,7 +132,7 @@ const LinkPreview = ({
                     height={height}
                     style={{ borderRadius: "0.5rem" }}
                     alt="preview"
-                  />
+                  /> */}
                 </a>
               </motion.div>
             )}
