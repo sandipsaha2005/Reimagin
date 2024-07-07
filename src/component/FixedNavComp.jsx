@@ -18,6 +18,7 @@ import { AiOutlineMenu } from "react-icons/ai"; // Import the menu icon from rea
 import Drawer from "@mui/material/Drawer";
 import CloseIcon from "@mui/icons-material/Close";
 import LinkPreview from "../ui/LinkTest";
+import Logo from '../assets/render-logo.png'
 import {
   Box,
   List,
@@ -87,21 +88,22 @@ function Navbar({ className }) {
           paddingBottom: 3,
         }}
       >
-        <p style={{ fontSize: 30 }}>Welcome </p>
+        <p style={{ fontSize: 30 }}>Render</p>
         <IconButton onClick={toggleDrawer(false)}>
           <CloseIcon size={24} style={{ fill: "white" }} />
         </IconButton>
       </Box>
-      <Divider style={{ backgroundColor: "white" }} />
+      <Divider style={{ backgroundColor: "#71717a " }} />
       <Box sx={{ minHeight: 352, minWidth: 250, paddingTop: 4 }}>
   <SimpleTreeView sx={{ display: "flex", flexDirection: "column", gap: 2 }}>
     <TreeItem
       itemId="products"
-      label={<h2 style={{ fontSize: 25 }}>Products</h2>}
+      label={<h2 style={{ fontSize: 25 }} className="text-zinc-500">Products</h2>}
     >
       <TreeItem
         itemId="products-feature"
-        label={<h2 style={{ fontSize: 20 }}>Feature</h2>}
+        label={<h2 style={{ fontSize: 20 }} className="text-zinc-400">Feature</h2>}
+        className="text-zinc-200"
       >
         <TreeItem itemId="feature-communitya" label={<h2 style={{ fontSize: 17 }}>Autoscaling</h2>}/>
         <TreeItem itemId="feature-prov" label={<h2 style={{ fontSize: 17 }}>Private Networking</h2>}/>
@@ -117,7 +119,8 @@ function Navbar({ className }) {
       </TreeItem>
       <TreeItem
         itemId="products-service"
-        label={<h2 style={{ fontSize: 20 }}>Service</h2>}
+        label={<h2 style={{ fontSize: 20 }} className="text-zinc-400">Service</h2>}
+        className="text-zinc-200"
       >
         <TreeItem itemId="notnew" label={<h2 style={{ fontSize: 17 }}>Static Sites</h2>}/>
         <TreeItem itemId="notnewa" label={<h2 style={{ fontSize: 17 }}>Web Services</h2>}/>
@@ -130,7 +133,8 @@ function Navbar({ className }) {
       </TreeItem>
       <TreeItem
         itemId="products-runtimesdfdf"
-        label={<h2 style={{ fontSize: 20 }}>Runtimes</h2>}
+        label={<h2 style={{ fontSize: 20 }} className="text-zinc-400">Runtimes</h2>}
+        className="text-zinc-200"
       >
         <TreeItem itemId="notnewf=g" label={<h2 style={{ fontSize: 17 }}>Node</h2>}/>
         <TreeItem itemId="notnesdfsdwfh" label={<h2 style={{ fontSize: 17 }}>Docker</h2>}/>
@@ -144,7 +148,8 @@ function Navbar({ className }) {
     </TreeItem>
     <TreeItem
       itemId="pickers"
-      label={<h2 style={{ fontSize: 25 }}>Pricing</h2>}
+      label={<h2 style={{ fontSize: 25 }} className="text-zinc-500">Pricing</h2>}
+      className="text-zinc-300"
     >
       <TreeItem itemId="pickers-community" label={<h2 style={{ fontSize: 20 }}>Indivisual</h2>} />
       <TreeItem itemId="pickers-pro1" label={<h2 style={{ fontSize: 20 }}>Enterprise</h2>} />
@@ -153,7 +158,8 @@ function Navbar({ className }) {
     </TreeItem>
     <TreeItem
       itemId="charts"
-      label={<h2 style={{ fontSize: 25 }}>Others</h2>}
+      label={<h2 style={{ fontSize: 25 }} className="text-zinc-500">Others</h2>}
+      className="text-zinc-300"
     >
       <TreeItem itemId="pickers-pro5" label={<h2 style={{ fontSize: 20 }}>Careers</h2>} />
       <TreeItem itemId="pickers-pro6" label={<h2 style={{ fontSize: 20 }}>About</h2>} />
