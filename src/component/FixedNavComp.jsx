@@ -18,7 +18,6 @@ import { AiOutlineMenu } from "react-icons/ai"; // Import the menu icon from rea
 import Drawer from "@mui/material/Drawer";
 import CloseIcon from "@mui/icons-material/Close";
 import LinkPreview from "../ui/LinkTest";
-import Logo from '../assets/render-logo.png'
 import {
   Box,
   List,
@@ -95,91 +94,212 @@ function Navbar({ className }) {
       </Box>
       <Divider style={{ backgroundColor: "#71717a " }} />
       <Box sx={{ minHeight: 352, minWidth: 250, paddingTop: 4 }}>
-  <SimpleTreeView sx={{ display: "flex", flexDirection: "column", gap: 2 }}>
-    <TreeItem
-      itemId="products"
-      label={<h2 style={{ fontSize: 25 }} className="text-zinc-500">Products</h2>}
-    >
-      <TreeItem
-        itemId="products-feature"
-        label={<h2 style={{ fontSize: 20 }} className="text-zinc-400">Feature</h2>}
-        className="text-zinc-200"
-      >
-        <TreeItem itemId="feature-communitya" label={<h2 style={{ fontSize: 17 }}>Autoscaling</h2>}/>
-        <TreeItem itemId="feature-prov" label={<h2 style={{ fontSize: 17 }}>Private Networking</h2>}/>
-        <TreeItem itemId="feature-prob" label={<h2 style={{ fontSize: 17 }}>Managed PostgreSQL</h2>}/>
-        <TreeItem itemId="feature-proc" label={<h2 style={{ fontSize: 17 }}>Maganed Redis</h2>}/>
-        <TreeItem itemId="feature-prod" label={<h2 style={{ fontSize: 17 }}>Presistent Disks</h2>}/>
-        <TreeItem itemId="feature-proe" label={<h2 style={{ fontSize: 17 }}>Infrastucture as Code</h2>}/>
-        <TreeItem itemId="feature-prof" label={<h2 style={{ fontSize: 17 }}>Preview Environments</h2>}/>
-        <TreeItem itemId="feature-prog" label={<h2 style={{ fontSize: 17 }}>Zero Downtime Deploys</h2>}/>
-        <TreeItem itemId="feature-proh" label={<h2 style={{ fontSize: 17 }}>Render API</h2>}/>
-        
-        
-      </TreeItem>
-      <TreeItem
-        itemId="products-service"
-        label={<h2 style={{ fontSize: 20 }} className="text-zinc-400">Service</h2>}
-        className="text-zinc-200"
-      >
-        <TreeItem itemId="notnew" label={<h2 style={{ fontSize: 17 }}>Static Sites</h2>}/>
-        <TreeItem itemId="notnewa" label={<h2 style={{ fontSize: 17 }}>Web Services</h2>}/>
-        <TreeItem itemId="notnewb" label={<h2 style={{ fontSize: 17 }}>Private Services</h2>}/>
-        <TreeItem itemId="notnewc" label={<h2 style={{ fontSize: 17 }}>Background Workers</h2>}/>
-        <TreeItem itemId="notnewd" label={<h2 style={{ fontSize: 17 }}>Cron Jobs</h2>}/>
-        <TreeItem itemId="notnewe" label={<h2 style={{ fontSize: 17 }}>PostgreSQL</h2>}/>
-        <TreeItem itemId="notnewf" label={<h2 style={{ fontSize: 17 }}>Redis</h2>}/>
-
-      </TreeItem>
-      <TreeItem
-        itemId="products-runtimesdfdf"
-        label={<h2 style={{ fontSize: 20 }} className="text-zinc-400">Runtimes</h2>}
-        className="text-zinc-200"
-      >
-        <TreeItem itemId="notnewf=g" label={<h2 style={{ fontSize: 17 }}>Node</h2>}/>
-        <TreeItem itemId="notnesdfsdwfh" label={<h2 style={{ fontSize: 17 }}>Docker</h2>}/>
-        <TreeItem itemId="notnedsfdwfi" label={<h2 style={{ fontSize: 17 }}>Static Sites</h2>}/>
-        <TreeItem itemId="notnsdfsdewfh" label={<h2 style={{ fontSize: 17 }}>Python</h2>}/>
-        <TreeItem itemId="notnsdfddfsdewfi" label={<h2 style={{ fontSize: 17 }}>Ruby</h2>}/>
-        <TreeItem itemId="notdfdsnewfj" label={<h2 style={{ fontSize: 17 }}>Go</h2>}/>
-        <TreeItem itemId="notndfssdf" label={<h2 style={{ fontSize: 17 }}>Rust</h2>}/>
-        <TreeItem itemId="notnsdfssdhf" label={<h2 style={{ fontSize: 17 }}>PHP</h2>}/>
-      </TreeItem>
-    </TreeItem>
-    <TreeItem
-      itemId="pickers"
-      label={<h2 style={{ fontSize: 25 }} className="text-zinc-500">Pricing</h2>}
-      className="text-zinc-300"
-    >
-      <TreeItem itemId="pickers-community" label={<h2 style={{ fontSize: 20 }}>Indivisual</h2>} />
-      <TreeItem itemId="pickers-pro1" label={<h2 style={{ fontSize: 20 }}>Enterprise</h2>} />
-      <TreeItem itemId="pickers-pro2" label={<h2 style={{ fontSize: 20 }}>Team</h2>} />
-      <TreeItem itemId="pickers-pro3" label={<h2 style={{ fontSize: 20 }}>Organization</h2>} />
-    </TreeItem>
-    <TreeItem
-      itemId="charts"
-      label={<h2 style={{ fontSize: 25 }} className="text-zinc-500">Others</h2>}
-      className="text-zinc-300"
-    >
-      <TreeItem itemId="pickers-pro5" label={<h2 style={{ fontSize: 20 }}>Careers</h2>} />
-      <TreeItem itemId="pickers-pro6" label={<h2 style={{ fontSize: 20 }}>About</h2>} />
-      <TreeItem itemId="pickers-pro7" label={<h2 style={{ fontSize: 20 }}>Blog</h2>} />
-      <TreeItem itemId="pickers-pro8" label={<h2 style={{ fontSize: 20 }}>Changelog</h2>} />
-      <TreeItem itemId="pickers-pro9" label={<h2 style={{ fontSize: 20 }}>Docs</h2>} />
-    </TreeItem>
-  </SimpleTreeView>
-</Box>
-
+        <SimpleTreeView
+          sx={{ display: "flex", flexDirection: "column", gap: 2 }}
+        >
+          <TreeItem
+            itemId="products"
+            label={
+              <h2 style={{ fontSize: 25 }} className="text-zinc-500">
+                Products
+              </h2>
+            }
+          >
+            <TreeItem
+              itemId="products-feature"
+              label={
+                <h2 style={{ fontSize: 20 }} className="text-zinc-400">
+                  Feature
+                </h2>
+              }
+              className="text-zinc-200"
+            >
+              <TreeItem
+                itemId="feature-communitya"
+                label={<h2 style={{ fontSize: 17 }}>Autoscaling</h2>}
+              />
+              <TreeItem
+                itemId="feature-prov"
+                label={<h2 style={{ fontSize: 17 }}>Private Networking</h2>}
+              />
+              <TreeItem
+                itemId="feature-prob"
+                label={<h2 style={{ fontSize: 17 }}>Managed PostgreSQL</h2>}
+              />
+              <TreeItem
+                itemId="feature-proc"
+                label={<h2 style={{ fontSize: 17 }}>Maganed Redis</h2>}
+              />
+              <TreeItem
+                itemId="feature-prod"
+                label={<h2 style={{ fontSize: 17 }}>Presistent Disks</h2>}
+              />
+              <TreeItem
+                itemId="feature-proe"
+                label={<h2 style={{ fontSize: 17 }}>Infrastucture as Code</h2>}
+              />
+              <TreeItem
+                itemId="feature-prof"
+                label={<h2 style={{ fontSize: 17 }}>Preview Environments</h2>}
+              />
+              <TreeItem
+                itemId="feature-prog"
+                label={<h2 style={{ fontSize: 17 }}>Zero Downtime Deploys</h2>}
+              />
+              <TreeItem
+                itemId="feature-proh"
+                label={<h2 style={{ fontSize: 17 }}>Render API</h2>}
+              />
+            </TreeItem>
+            <TreeItem
+              itemId="products-service"
+              label={
+                <h2 style={{ fontSize: 20 }} className="text-zinc-400">
+                  Service
+                </h2>
+              }
+              className="text-zinc-200"
+            >
+              <TreeItem
+                itemId="notnew"
+                label={<h2 style={{ fontSize: 17 }}>Static Sites</h2>}
+              />
+              <TreeItem
+                itemId="notnewa"
+                label={<h2 style={{ fontSize: 17 }}>Web Services</h2>}
+              />
+              <TreeItem
+                itemId="notnewb"
+                label={<h2 style={{ fontSize: 17 }}>Private Services</h2>}
+              />
+              <TreeItem
+                itemId="notnewc"
+                label={<h2 style={{ fontSize: 17 }}>Background Workers</h2>}
+              />
+              <TreeItem
+                itemId="notnewd"
+                label={<h2 style={{ fontSize: 17 }}>Cron Jobs</h2>}
+              />
+              <TreeItem
+                itemId="notnewe"
+                label={<h2 style={{ fontSize: 17 }}>PostgreSQL</h2>}
+              />
+              <TreeItem
+                itemId="notnewf"
+                label={<h2 style={{ fontSize: 17 }}>Redis</h2>}
+              />
+            </TreeItem>
+            <TreeItem
+              itemId="products-runtimesdfdf"
+              label={
+                <h2 style={{ fontSize: 20 }} className="text-zinc-400">
+                  Runtimes
+                </h2>
+              }
+              className="text-zinc-200"
+            >
+              <TreeItem
+                itemId="notnewf=g"
+                label={<h2 style={{ fontSize: 17 }}>Node</h2>}
+              />
+              <TreeItem
+                itemId="notnesdfsdwfh"
+                label={<h2 style={{ fontSize: 17 }}>Docker</h2>}
+              />
+              <TreeItem
+                itemId="notnedsfdwfi"
+                label={<h2 style={{ fontSize: 17 }}>Static Sites</h2>}
+              />
+              <TreeItem
+                itemId="notnsdfsdewfh"
+                label={<h2 style={{ fontSize: 17 }}>Python</h2>}
+              />
+              <TreeItem
+                itemId="notnsdfddfsdewfi"
+                label={<h2 style={{ fontSize: 17 }}>Ruby</h2>}
+              />
+              <TreeItem
+                itemId="notdfdsnewfj"
+                label={<h2 style={{ fontSize: 17 }}>Go</h2>}
+              />
+              <TreeItem
+                itemId="notndfssdf"
+                label={<h2 style={{ fontSize: 17 }}>Rust</h2>}
+              />
+              <TreeItem
+                itemId="notnsdfssdhf"
+                label={<h2 style={{ fontSize: 17 }}>PHP</h2>}
+              />
+            </TreeItem>
+          </TreeItem>
+          <TreeItem
+            itemId="pickers"
+            label={
+              <h2 style={{ fontSize: 25 }} className="text-zinc-500">
+                Pricing
+              </h2>
+            }
+            className="text-zinc-300"
+          >
+            <TreeItem
+              itemId="pickers-community"
+              label={<h2 style={{ fontSize: 20 }}>Indivisual</h2>}
+            />
+            <TreeItem
+              itemId="pickers-pro1"
+              label={<h2 style={{ fontSize: 20 }}>Enterprise</h2>}
+            />
+            <TreeItem
+              itemId="pickers-pro2"
+              label={<h2 style={{ fontSize: 20 }}>Team</h2>}
+            />
+            <TreeItem
+              itemId="pickers-pro3"
+              label={<h2 style={{ fontSize: 20 }}>Organization</h2>}
+            />
+          </TreeItem>
+          <TreeItem
+            itemId="charts"
+            label={
+              <h2 style={{ fontSize: 25 }} className="text-zinc-500">
+                Others
+              </h2>
+            }
+            className="text-zinc-300"
+          >
+            <TreeItem
+              itemId="pickers-pro5"
+              label={<h2 style={{ fontSize: 20 }}>Careers</h2>}
+            />
+            <TreeItem
+              itemId="pickers-pro6"
+              label={<h2 style={{ fontSize: 20 }}>About</h2>}
+            />
+            <TreeItem
+              itemId="pickers-pro7"
+              label={<h2 style={{ fontSize: 20 }}>Blog</h2>}
+            />
+            <TreeItem
+              itemId="pickers-pro8"
+              label={<h2 style={{ fontSize: 20 }}>Changelog</h2>}
+            />
+            <TreeItem
+              itemId="pickers-pro9"
+              label={<h2 style={{ fontSize: 20 }}>Docs</h2>}
+            />
+          </TreeItem>
+        </SimpleTreeView>
+      </Box>
     </Box>
   );
-  console.log(drawerOpen);
+  // console.log(drawerOpen);
   return (
     <div
       className={cn("fixed top-10 inset-x-0 max-w-2xl mx-auto z-50", className)}
     >
       <div className="flex justify-between items-center md:hidden">
         <IconButton onClick={toggleDrawer(true)}>
-          <AiOutlineMenu size={24} style={{ fill: "white" }} />
+          <AiOutlineMenu size={20} style={{ fill: "white" }} />
         </IconButton>
       </div>
       <Drawer
@@ -194,7 +314,7 @@ function Navbar({ className }) {
         {DrawerList}
       </Drawer>
 
-      <div className="hidden md:flex justify-center">
+      <div className="hidden md:flex justify-center gap-10">
         <Menu setActive={setActive}>
           <MenuItem setActive={setActive} active={active} item="PRODUCTS">
             <div className="flex gap-3">
