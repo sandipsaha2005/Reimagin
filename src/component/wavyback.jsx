@@ -11,7 +11,7 @@ export function WavyBackgroundDemo() {
       <img className=" inline-block mb-2 md:h-16 h-5 invert" src={logo} alt="Render Logo" />
         .fastest path to production
       </p>
-      <p className="text-base md:text-2xl mt-4 text-white font-normal inter-var text-center mb-4">
+      <p className="text-base md:text-2xl mt-4 text-white font-normal inter-var text-center mb-8">
         Build, deploy, and scale your apps with unparalleled ease – from your first user to your billionth.
       </p>
       <div className=" items-start">
